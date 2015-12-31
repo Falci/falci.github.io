@@ -58,19 +58,19 @@ $(document).ready(function() {
 
 
     /* Sticky menu */
-    $(".navbar").sticky({
+    $('.navbar').sticky({
         topSpacing: 0
     });
 
 
     /* Scroll spy and scroll filter */
     $('#main-menu').onePageNav({
-        currentClass: "active",
+        currentClass: 'active',
         changeHash: false,
         scrollThreshold: 0.5,
         scrollSpeed: 750,
-        filter: "",
-        easing: "swing"
+        filter: '',
+        easing: 'swing'
     });
 
     /* Charts*/
@@ -89,7 +89,6 @@ $(document).ready(function() {
         offset: 'bottom-in-view'
     });
 
-
     /* VEGAS Home Slider */
 
 	    $('#page-welcome').vegas({
@@ -102,10 +101,10 @@ $(document).ready(function() {
     overlay: true
 });
 
-    $("#vegas-next").click(function() {
+    $('#vegas-next').click(function() {
         $('#page-welcome').vegas('next');
     });
-    $("#vegas-prev").click(function() {
+    $('#vegas-prev').click(function() {
        $('#page-welcome').vegas('previous');
     });
 
