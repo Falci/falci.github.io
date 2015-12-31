@@ -1,67 +1,443 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fernando Falci</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.1.3/vegas.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/colors/blue.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
 
-    <title>Fernando Falci by Falci</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Fernando Falci</h1>
-        <h2></h2>
-        <a href="https://github.com/Falci" class="button"><small>Follow me on</small> GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="main-menu">
+                    <li><a href="#page-welcome">Home</a>                    </li>
+                    <li><a href="#page-profile">Profile</a></li>
+                    <li><a href="#page-skills">Skills</a></li>
+                    <li><a href="#page-education">Education</a></li>
+                    <li><a href="#page-experience">Experience</a></li>
+                    <li><a href="#page-portfolio">Portfolio</a></li>
+                    <li><a href="#page-contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
     </div>
+    <!-- welcome begins -->
+    <section id="page-welcome" class="page-welcome">
+        <div>
+            <ul class="slider-controls">
+                <li>
+                    <a id="vegas-next" class="next" href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a id="vegas-prev" class="prev" href="javascript:void(0)"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <header class="centered">
+                    <h1>Fernando Falci</h1>
+                    <p>Developer</p>
+                </header>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/fernandofalci" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fernandofalci" class="btn btn-round btn-clear btn-instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/fernandofalci" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://plus.google.com/u/0/+FernandoFalci/posts" class="btn btn-round btn-clear btn-google"><i class="fa fa-google-plus"></i></a>
+                    <a href="http://stackoverflow.com/users/1247387/falci" class="btn btn-round btn-clear btn-stack-overflow"><i class="fa fa-stack-overflow"></i></a>
+                    <a href="https://github.com/Falci" class="btn btn-round btn-clear btn-git"><i class="fa fa-git"></i></a>
 
-  
-  </body>
+                </div>
+                <a href="#page-contact" class="btn btn-default hire-me">Hire Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- welcome ends -->
+    <!-- profile begins -->
+    <section id="page-profile" class="page-profile">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Personal Profile</h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+            </header>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="profile"><img src="img/profile.jpg" alt="profile" />
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <p>Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.</p>
+                    <p>Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
+                    <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum. Cum at eius reformidans. In vocent dolores eos, ea vel idque soluta similique.</p>
+                    <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- profile ends -->
+    <!-- skills begins -->
+    <section id="page-skills" class="page-skills">
+        <div class="container">
+
+            <header class="section-header">
+                <h2 class="section-title"><span>Skills</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+            </header>
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="chart" data-percent="95">
+                      <span class="percent"></span>
+                    <h3>Photoshop</h3>
+                    </span>
+                </div>
+                <div class="col-md-2 ">
+                    <span class="chart" data-percent="60">
+                      <span class="percent"></span>
+                    <h3>Illustrator</h3>
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    <span class="chart" data-percent="75">
+                      <span class="percent"></span>
+                    <h3>HTML</h3>
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    <span class="chart" data-percent="80">
+                      <span class="percent"></span>
+                    <h3>CSS</h3>
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    <span class="chart" data-percent="65">
+                      <span class="percent"></span>
+                    <h3>jQuery</h3>
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    <span class="chart" data-percent="85">
+                      <span class="percent"></span>
+                    <h3>PHP</h3>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills ends -->
+    <!-- education begins -->
+    <section id="page-education" class="page-education">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Education</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+            </header>
+            <div class="row">
+                <div class="col-md-6">
+                    <article class="education">
+                        <header>
+                            <h3>School of the Art Institute of Chicago</h3>
+                            <p>Bachelor of Fine Arts - <strong>Graduated:</strong> 2004</p>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="education">
+                        <header>
+                            <h3>Rhode Island School of Design</h3>
+                            <p>Associates of Fine Arts - <strong>Graduated:</strong> 2002</p>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- education ends -->
+    <!-- experience begins -->
+    <section id="page-experience" class="page-experience">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Experience</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+            </header>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="experience">
+                        <header>
+                            <h3>Dropbox</h3>
+                            <p>Design Lead / San Francisco, CA / 2013 - Current</p>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="experience">
+                        <header>
+                            <h3>Instagram</h3>
+                            <p>Visual Designer / San Francisco, CA / 2010 - 2013</p>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="experience">
+                        <header>
+                            <h3>Facebook</h3>
+                            <p>Product Designer / San Francisco, CA / 2005 - 2010</p>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- experience ends -->
+    <!-- portfolio begins -->
+    <section id="page-portfolio" class="page-portfolio">
+        <div class="container">
+            <div class="row">
+                <header class="section-header">
+                    <h2 class="section-title"><span>Portfolio</span></h2>
+                    <div class="spacer"></div>
+                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                </header>
+
+                <div id="grid-controls-wrapper">
+                    <ul class="nav nav-pills center-pills grid-controls">
+                        <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a>
+                        </li>
+                        <li class="filter"><a href="javascript:void(0)" data-filter=".branding">Branding</a>
+                        </li>
+                        <li class="filter"><a href="javascript:void(0)" data-filter=".design">Design</a>
+                        </li>
+                        <li class="filter"><a href="javascript:void(0)" data-filter=".photography">Photography</a>
+                        </li>
+                        <li class="filter"><a href="javascript:void(0)" data-filter=".web">Website</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul id="grid" class="grid-wrapper">
+                        <li class="mix web">
+                            <a href="img/portfolio/large/01.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/01.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/02.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/02.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/03.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/03.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix web">
+                            <a href="img/portfolio/large/04.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/04.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix branding">
+                            <a href="img/portfolio/large/05.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/05.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/06.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/06.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix photography">
+                            <a href="img/portfolio/large/07.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/07.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix photography">
+                            <a href="img/portfolio/large/08.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/08.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix photography">
+                            <a href="img/portfolio/large/09.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/09.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix web">
+                            <a href="img/portfolio/large/10.jpg">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/10.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/11.jpg">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/11.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/12.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/12.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/13.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/13.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix design">
+                            <a href="img/portfolio/large/14.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/14.png" alt="">
+                            </a>
+                        </li>
+                        <li class="mix branding">
+                            <a href="img/portfolio/large/15.png">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div><img src="img/portfolio/small/15.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio ends -->
+    <!-- contact begins -->
+    <section id="page-contact" class="page-contact">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Contact</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+            </header>
+            <div class="row">
+                <div class="col-sm-5 contact-info">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa fa-map-marker"></i> Maringá, PR, Brazil </p>
+                    <p><i class="fa fa-phone"></i> +55 (44) 8806-3145</p>
+                    <p><i class="fa fa-envelope-o"></i> falci@falci.me</p>
+                </div>
+
+                <div class="col-sm-7">
+                    <h3>Get in Touch</h3>
+                    <!-- Configure the contact form by adding your email address on mail/contact_me.php line 17 -->
+                    <form class="form-horizontal" id="contactForm" novalidate>
+                        <div class="control-group">
+                            <label class="control-label" for="name">Name</label>
+                            <div class="controls">
+                                <input type="text" name="name" id="name" placeholder="Your name" class="form-control input-lg"  required data-validation-required-message="Please enter your name.">
+                                  <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="email">Email Address</label>
+                            <div class="controls">
+                                <input type="email" name="email" id="email" placeholder="Your email address" class="form-control input-lg"  required data-validation-required-message="Please enter your email address.">
+                                  <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="message">Message</label>
+                            <div class="controls">
+                                <textarea name="message" id="message" rows="8" class="form-control input-lg" required data-validation-required-message="Please enter a message."></textarea>
+                                  <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                        <div id="success"></div>
+                            <button type="submit" class="btn btn-default btn-lg btn-block">Submit Message</button>
+                        </div>
+                    </form>
+                    <!-- End contact-form -->
+                </div>
+            </div>
+            <!-- End row -->
+
+        </div>
+    </section>
+    <!-- contact ends -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.3/jquery.easypiechart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.1.3/vegas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2568035-30', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+
 </html>
