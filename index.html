@@ -263,7 +263,7 @@
         <div class="col-sm-7">
           <h3>Entre em contato</h3>
           <!-- Configure the contact form by adding your email address on mail/contact_me.php line 17 -->
-          <form class="form-horizontal" id="contactForm" novalidate action="//formspree.io/contato@falci.me" method="POST">
+          <form class="form-horizontal" id="contactForm" novalidate>
             <div class="control-group">
               <label class="control-label" for="name">Nome</label>
               <div class="controls">
@@ -274,7 +274,7 @@
             <div class="control-group">
               <label class="control-label" for="email">Email</label>
               <div class="controls">
-                <input type="email" name="_replyto" id="email" placeholder="Seu email" class="form-control input-lg"  required data-validation-required-message="Me passa seu email para eu poder responder">
+                <input type="email" name="email" id="email" placeholder="Seu email" class="form-control input-lg"  required data-validation-required-message="Me passa seu email para eu poder responder">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
