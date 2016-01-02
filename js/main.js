@@ -91,12 +91,12 @@ $(document).ready(function() {
 
     /* VEGAS Home Slider */
 
-	    $('#page-welcome').vegas({
+      $('#page-welcome').vegas({
         slides: [
             { src: 'img/slider/01.jpg' },
             { src: 'img/slider/02.jpg' },
             { src: 'img/slider/03.jpg' },
-			{ src: 'img/slider/04.jpg' }
+      { src: 'img/slider/04.jpg' }
         ],
     overlay: true
 });
