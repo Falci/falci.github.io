@@ -17,7 +17,12 @@ $(function() {
         $.ajax({
           url: "//formspree.io/contato@falci.me",
           type: "POST",
-          data: {name: name, email: email, message: message},
+          dataType: "json",
+          data: {
+            name: name,
+            email: email,
+            message: message
+          },
           cache: false,
           success: function() {
             $('#success')
