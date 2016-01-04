@@ -70,7 +70,11 @@ $(document).ready(function() {
         scrollThreshold: 0.5,
         scrollSpeed: 750,
         filter: '',
-        easing: 'swing'
+        easing: 'swing',
+        scrollChange: function (li) {
+          var page = $('a', li).attr('href').replace('#page-','/');
+          ga('send', 'pageview', page);
+        }
     });
 
     /* Charts*/
@@ -107,7 +111,5 @@ $(document).ready(function() {
     $('#vegas-prev').click(function() {
        $('#page-welcome').vegas('previous');
     });
-
-
 
 });
