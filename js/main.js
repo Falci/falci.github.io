@@ -72,7 +72,8 @@ $(document).ready(function() {
         filter: '',
         easing: 'swing',
         scrollChange: function (li) {
-          var page = $('a', li).attr('href').replace('#page-','/');
+          var base = lang ? ('/' + lang) : '',
+            page = $('a', li).attr('href').replace('#page-', base + '/');
           ga('send', 'pageview', page);
         }
     });
