@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    $('.section-header, article').addClass('animated');
+    $('.animated:not(.page-citacao)').css('opacity', 0);
+
 
     /* Scroll hire me button to contact page */
     $('.hire-me').click(function() {
@@ -72,14 +75,62 @@ $(document).ready(function() {
         filter: '',
         easing: 'swing',
         scrollChange: function (li) {
-          var base = lang ? ('/' + lang) : '',
+          var base = typeof lang !== 'undefined' ? ('/' + lang) : '',
             page = $('a', li).attr('href').replace('#page-', base + '/');
           ga('send', 'pageview', page);
         }
     });
 
-    /* Charts*/
+    /* Animtions */
+    $('.section-header').waypoint(function () {
+      $(this).addClass('fadeInUp');
+    }, {
+        triggerOnce: true,
+        offset: '80%'
+    });
 
+    $('.page-profile').waypoint(function () {
+      $('.animated:eq(1)', this).addClass('fadeInLeft');
+      $('.animated:last', this).addClass('fadeIn');
+
+    }, {
+        triggerOnce: true,
+        offset: '60%'
+    });
+
+    $('.page-education').waypoint(function () {
+      $('.animated:eq(1)', this).addClass('fadeInLeft');
+      $('.animated:last', this).addClass('fadeInRight');
+
+    }, {
+        triggerOnce: true,
+        offset: '60%'
+    });
+
+    $('.page-experience').waypoint(function () {
+      $('.animated:eq(1)', this).addClass('fadeInLeft');
+      $('.animated:eq(2)', this).addClass('fadeIn');
+      $('.animated:last', this).addClass('fadeInRight');
+
+    }, {
+        triggerOnce: true,
+        offset: '60%'
+    });
+
+    $('.page-citacao').waypoint(function () {
+      $(this).addClass('pulse');
+    }, {offset: '60%'});
+
+    $('.page-contact').waypoint(function () {
+      $('.animated:eq(1)', this).addClass('fadeInLeft');
+      $('.animated:last', this).addClass('fadeInRight');
+
+    }, {
+        triggerOnce: true,
+        offset: '60%'
+    });
+
+    /* Charts*/
     $('.chart').waypoint(function() {
         $(this).easyPieChart({
             barColor: '#3498db',
