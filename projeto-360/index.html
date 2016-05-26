@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Street View panoramas</title>
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      .gm-iv-address-custom {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+function initPano() {
+  var panorama = new google.maps.StreetViewPanorama(
+    document.getElementById('map'), {
+      pano: 'adega',
+      visible: true,
+      panoProvider: getCustomPanorama
+  });
+
+  panorama.addListener('pov_changed', function () {
+    console.log(panorama.getPov().heading)
+  });
+
+  panorama.addListener('pano_changed', function () {
+    panorama.setZoom(0.4);
+  });
+
+  panorama.addListener('links_changed', function () {
+    panorama.setZoom(0.4);
+  });
+}
+
+var panoramas = {
+  sala: {
+    tileUrl: 'images/LivingRoom.jpg',
+    description: 'Casa 132',
+    shortDescription: 'Sala',
+    center: 105,
+    links: [{
+      heading: 1,
+      description: 'Cozinha',
+      pano: 'cozinha'
+    },{
+      heading: 91,
+      description: 'Banheiro',
+      pano: 'banheiro'
+    },{
+      heading: 61,
+      description: 'Adega',
+      pano: 'adega'
+    },{
+      heading: 147,
+      description: 'Quintal',
+      pano: 'quintal'
+    }]
+  },
+  cozinha: {
+    tileUrl: 'images/Kitchen.jpg',
+    description: 'Casa 132',
+    shortDescription: 'Cozinha',
+    links: [{
+      heading: -20,
+      description: 'Sala de Jantar',
+      pano: 'salaJantar'
+    },{
+      heading: 107,
+      description: 'Sala',
+      pano: 'sala'
+    }]
+  },
+  salaJantar: {
+    tileUrl: 'images/diningroom.jpg',
+    description: 'Casa 132',
+    shortDescription: 'Sala de Jantar',
+    links: [{
+      heading: 17,
+      description: 'Cozinha',
+      pano: 'cozinha'
+    },{
+      heading: -43,
+      description: 'Sala',
+      pano: 'sala'
+    }]
+  },
+  quintal: {
+    tileUrl: 'images/Poolhouse.jpg',
+    description: 'Casa 132',
+    shortDescription: 'Quintal',
+    links: [{
+      heading: 167,
+      description: 'Sala',
+      pano: 'sala'
+    },{
+      heading: 132,
+      description: 'Adega',
+      pano: 'adega'
+    }]
+  },
+  banheiro: {
+    tileUrl: 'images/Restroom.jpg',
+    description: 'Casa 132',
+    shortDescription: 'Banheiro',
+    links: [{
+      heading: 112,
+      description: 'Sala',
+      pano: 'sala'
+    }]
+  },
+  adega: {
+    tileUrl: 'images/Wineroom.jpg',
+    description: 'Casa 132',
+    shortDescription: 'Adega',
+    links: [{
+      heading: -65,
+      description: 'Sala',
+      pano: 'sala'
+    },{
+      heading: -150,
+      description: 'Quintal',
+      pano: 'quintal'
+    }]
+  }
+}
+
+
+
+// Construct the appropriate StreetViewPanoramaData given
+// the passed pano IDs.
+function getCustomPanorama(name, zoom, tileX, tileY) {
+  if(panoramas[name]){
+    return {
+      location: {
+        pano: name,
+        description: panoramas[name].description,
+        shortDescription: panoramas[name].shortDescription,
+
+      },
+      links: panoramas[name].links,
+      copyright: 'Imagery (c) 2016 Falci',
+      tiles: {
+        tileSize: new google.maps.Size(1024, 512),
+        worldSize: new google.maps.Size(1024, 512),
+        centerHeading: panoramas[name].center,
+        getTileUrl: function () {
+          return panoramas[name].tileUrl;
+        }
+      }
+    };
+  }
+}
+
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsSI2cm62a8lumKBXGCsivX71jbl08Z-o&signed_in=true&callback=initPano"
+        async defer>
+    </script>
+  </body>
+</html>
