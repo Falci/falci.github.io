@@ -1,0 +1,69 @@
+* {
+  background:transparent !important;
+  color:#000 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  -ms-filter:none !important;
+  opacity: 1 !important;
+}
+
+body {
+  margin:0;
+  padding:0;
+  line-height: 1.4em;
+}
+
+@page {
+  margin: 0.5cm;
+}
+
+.print-only {
+  display: block;
+}
+
+.navbar,
+#sticky-wrapper,
+#page-welcome,
+#page-skills,
+#page-citacao,
+#page-contact .col-sm-7 {
+  display: none;
+}
+
+#page-profile,
+#page-skills,
+#page-education,
+#page-experience,
+#page-contact {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.section-title {
+  letter-spacing: 0;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.section-title, .section-subtitle {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#page-profile .col-md-3{
+  float: left
+}
+
+.page-footer {
+  page-break-after: always;
+  text-align: right;
+}
+
+.page-footer p:not(:first-child) {
+  display: inline-block;
+  margin: 0 0 0 3px;
+}
