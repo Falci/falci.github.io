@@ -24,7 +24,7 @@ body {
 .navbar,
 #sticky-wrapper,
 #page-welcome,
-#page-skills,
+#page-skills .regular,
 #page-citacao,
 #page-contact .col-sm-7 {
   display: none;
@@ -56,6 +56,15 @@ h3 {
 
 #page-profile .col-md-3{
   float: left
+}
+
+#page-skills ul {
+    list-style: none;
+}
+
+#page-skills ul li {
+    float: left;
+    padding: 3px 9px;
 }
 
 .page-footer {
