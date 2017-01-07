@@ -15,7 +15,7 @@ $(function() {
         }
 
         $.ajax({
-          url: "//formspree.io/contato@falci.me",
+          url: "//formspree.io/site@falci.me",
           type: "POST",
           dataType: "json",
           data: {
@@ -33,7 +33,7 @@ $(function() {
               .append( "</button>");
 
             $('#success > .alert-success')
-              .append("<strong>Sua mensagem foi enviada. </strong>");
+              .append("<strong>" + successMessage + "</strong>");
 
             $('#success > .alert-success')
               .append('</div>');
@@ -50,7 +50,7 @@ $(function() {
               .append( "</button>");
 
             $('#success > .alert-danger')
-              .append("<strong>Desculpe "+firstName+", parece que algo está errado com meu servidor de email...</strong> Você pode enviar um email direto para <a href='mailto:contato@falci.me'>contato@falci.me</a> ? Desculpe pela inconveniencia!");
+              .append(errorMessage);
 
             $('#success > .alert-danger').append('</div>');
 

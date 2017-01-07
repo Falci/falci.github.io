@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>      <html lang="@@lang" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="@@lang" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="@@lang" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="@@lang">
 <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fernando Falci</title>
+  <title>@@title</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
@@ -20,9 +19,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/magnific-popup.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.1.3/vegas.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/colors/blue.css">
-  <link rel="stylesheet" href="css/print.css" media="print">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/colors/blue.css">
+  <link rel="stylesheet" href="../css/print.css" media="print">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <!-- Fonts -->
@@ -40,7 +39,7 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">@@toggle</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -48,13 +47,14 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav" id="main-menu">
-          <li><a href="#page-welcome">Home</a></li>
-          <li><a href="#page-profile">Perfil</a></li>
-          <li><a href="#page-skills">Habilidades</a></li>
-          <li><a href="#page-education">Graduação</a></li>
-          <li><a href="#page-experience">Experiência</a></li>
-          <li><a href="#page-contact">Contato</a></li>
-          <li><a href="./" title="English version"><img src="img/flags/us.png" width="17" /></a></li>
+          <li><a href="#page-welcome">@@home</a></li>
+          <li><a href="#page-profile">@@profile.title</a></li>
+          <li><a href="#page-skills">@@skills.title</a></li>
+          <li><a href="#page-education">@@education.title</a></li>
+          <li><a href="#page-experience">@@experience.title</a></li>
+          <li><a href="#page-contact">@@contact.title</a></li>
+          <li><a href="/@@lang1.code" title="@@lang1.version"><img src="../img/flags/@@lang1.code.png" width="17" /></a></li>
+          <li><a href="/@@lang2.code" title="@@lang2.version"><img src="../img/flags/@@lang2.code.png" width="17" /></a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -72,16 +72,16 @@
       <div class="container">
         <div class="row">
           <header class="centered">
-            <h1>Fernando Falci</h1>
-            <p>Desenvolvedor</p>
+            <h1>@@name</h1>
+            <p>@@developer</p>
           </header>
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/fernandofalci" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+            <a href="@@social.linkedin" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
             <a href="https://plus.google.com/u/0/+FernandoFalci/posts" class="btn btn-round btn-clear btn-google"><i class="fa fa-google-plus"></i></a>
             <a href="http://stackoverflow.com/users/1247387/falci" class="btn btn-round btn-clear btn-stack-overflow"><i class="fa fa-stack-overflow"></i></a>
             <a href="https://github.com/Falci" class="btn btn-round btn-clear btn-git"><i class="fa fa-github"></i></a>
           </div>
-          <a href="#page-contact" class="btn btn-default hire-me">Contrate-me</a>
+          <a href="#page-contact" class="btn btn-default hire-me">@@hireMe</a>
       </div>
     </div>
   </section>
@@ -91,25 +91,18 @@
   <section id="page-profile" class="page-profile">
     <div class="container">
       <header class="section-header">
-        <h2 class="section-title">Perfil Pessoal</h2>
+        <h2 class="section-title">@@profile.sub</h2>
         <div class="spacer"></div>
         <!-- <p class="section-subtitle"></p> -->
       </header>
       <div class="row">
         <div class="col-md-3">
             <div class="profile animated">
-              <img src="img/profile.jpg" alt="profile" />
+              <img src="../img/profile.jpg" alt="profile" />
             </div>
         </div>
         <div class="col-md-9 animated">
-          <p>Olá, meu nome é Fernando Falci, sou desenvolvedor web e trabalho nessa área desde que me graduei há cinco anos.</p>
-          <p>Comecei fazendo freelances em pequenos projetos, no geral PHP e Javascript (Wordpress).</p>
-          <p>Quando decidi que estava pronto para um experiência profissional, comecei a trabalhar como programador na <a href="http://www.elotech.com.br" target="_blank">Elotech</a>. Lá trabalhei como programador PHP, usando Zend Framework e jQuery num projeto da área de saúde.</p>
-          <p>Algum tempo depois troquei o PHP por Java e o jQuery por AngularJS. Comecei uma pós-graduação em Java para ajudar nessa troca. Me saí bem. Nesse meio tempo fiz uma certificação de HTML5, CSS3 e Javascript, da Microsoft; e também fiz a Associate Java 8, da Oracle;</p>
-          <p>Agora estou na <a href="http://matera.com" target="_blank">MATERA Systems</a>. Trabalho em um projeto internacional, para uma das maiores empresas de telecomunicação dos EUA (na lista Fortune 500). É incrivel quanta tecnologia nova usamos aqui: micro services, AWS cloud, varios projetos da Netflix OSS: Eureka, Governator, Asgard, Archaius, Hysterix, Karyon, Zuul. Aprendi algumas coisas diferentes como code review, scrum, ambientes diferente para cada fase do projeto (dev, test, prod).</p>
-          <p>Aqui também gostamos de fazer cursos e palestras, tanto para nossos colegas quanto para a comunidade ao redor. Participei de vários como Docker, Cassandra, Meteor, Materail Design; ministrei alguns: AngularJS, Chrome Inspector, Lambda (Java 8).</p>
-          <p>Há cerca de um ano comecei a trabalhar em outro projeto, <i>part time</i>, para a <a href="http://mobile-di.com/" target="_blank">Mobile DI</a>. Participei de um projeto para que os eleitores possam opniar sobre os projetos de lei de sua região. Agora estou num outro projeto, para gerenciamento das atividades durante o desenvolvimento. Nesse projeto estou usando NodeJS no backend, e o Angular no frontend. Estou gerenciando um pequeno time de três desenvolvedores e um QA. </p>
-          <p>Bem, esse é apenas um resumo das minhas experiências profissionais. Fique a vontate para entrar em contato e tirar qualquer dúvida. :)</p>
+          @@profile.text
         </div>
       </div>
     </div>
@@ -121,9 +114,9 @@
     <div class="container">
 
       <header class="section-header">
-        <h2 class="section-title"><span>Habilidades</span></h2>
+        <h2 class="section-title"><span>@@skills.title</span></h2>
         <div class="spacer"></div>
-        <p class="section-subtitle">Palavras-chave</p>
+        <p class="section-subtitle">@@skills.sub</p>
       </header>
       <div class="row regular">
         <div class="col-md-2">
@@ -204,37 +197,37 @@
   <!-- skills ends -->
 
   <div class="print-only page-footer">
-    <p>Fernando Falci</p>
-    <p>contato@falci.me</p>
+    <p>@@name</p>
+    <p>@@contact.email</p>
     <p>::</p>
-    <p>(44) 8806-3145</p>
+    <p>@@contact.phone.number</p>
   </div>
 
   <!-- education begins -->
   <section id="page-education" class="page-education">
     <div class="container">
       <header class="section-header">
-        <h2 class="section-title"><span>Graduação</span></h2>
+        <h2 class="section-title"><span>@@education.title</span></h2>
         <div class="spacer"></div>
-        <p class="section-subtitle">Os pilares do meu conhecimento</p>
+        <p class="section-subtitle">@@education.sub</p>
       </header>
       <div class="row">
         <div class="col-md-6">
           <article class="education">
             <header>
-              <h3>UniCesumar - Maringá</h3>
-              <p>Pós-Graduação em Java - <strong>Em andamento</strong></p>
+              <h3>@@education.cesumar.title</h3>
+              <p>@@education.cesumar.sub - <strong>@@education.cesumar.progress</strong></p>
             </header>
-            <p>O curso ofereceu uma visão aprofundada do Java e suas tecnologias relacionadas de forma a ser capaz de escolher aquelas que atendem aos requisitos particulares de diversos domínios de aplicações existentes e seja também capaz de desenvolver sistemas em java aplicando orientação a objetos e design patterns. Foi abordado o desenvolvimento em java para desktop, web, ambiente corporativo e dispositivos móveis.</p>
+            <p>@@education.cesumar.text</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="education">
             <header>
-              <h3>UNIPAR - Guaíra</h3>
-              <p>Análise e Desenvolvimento de Sistemas - <strong>Graduado:</strong> 2010</p>
+              <h3>@@education.unipar.title</h3>
+              <p>@@education.unipar.sub - <strong>@@education.unipar.progress</strong></p>
             </header>
-            <p>Pontapé inicial da minha carreira profissional. O curso proporcionou uma base sólida para o desenvolvimento de sistemas. Inicio também de um <i>networking</i> que cultivo até hoje. Laureado como melhor aluno do curso, considero esse um dos passos mais importantes da minha carreira.</p>
+            <p>@@education.unipar.text</p>
           </article>
         </div>
       </div>
@@ -246,36 +239,36 @@
   <section id="page-experience" class="page-experience">
     <div class="container">
       <header class="section-header">
-        <h2 class="section-title"><span>Experiência</span></h2>
+        <h2 class="section-title"><span>@@experience.title</span></h2>
         <div class="spacer"></div>
-        <p class="section-subtitle">Algumas empresas importantes da minha carreira profissional</p>
+        <p class="section-subtitle">@@experience.sub</p>
       </header>
       <div class="row">
         <div class="col-md-4">
           <article class="experience">
             <header>
-              <h3>MATERA Systems</h3>
-              <p>Desenvolvedor / Maringá, PR / 2014 - Atual</p>
+              <h3>@@experience.matera.title</h3>
+              <p>@@experience.matera.sub</p>
             </header>
-            <p>Atuo como desenvolvedor em um projeto <i>outsourcing</i> para uma empresa norte americana. Palavras chave: Netflix OSS, Jersey, API Rest, micro-serviços, <i>outsourcing</i>.</p>
+            <p>@@experience.matera.text</p>
           </article>
         </div>
         <div class="col-md-4">
           <article class="experience">
             <header>
-              <h3><i>Confidencial</i></h3>
-              <p>Desenvolvedor / Maringá, PR / 2012 - 2014</p>
+              <h3><i>@@experience.confidential.title</i></h3>
+              <p>@@experience.confidential.sub</p>
             </header>
-            <p>Trabalhei em dois diferentes produtos. Um voltado para o gerenciamento de dados eleitorais e outro para o <i>back office</i> de uma grande rede de supermercados. Palavras chave: Java, JSP, Oracle, <i>outsourcing</i>, Android.</p>
+            <p>@@experience.confidential.text</p>
           </article>
         </div>
         <div class="col-md-4">
           <article class="experience">
             <header>
-              <h3>Elotech</h3>
-              <p>Desenvolvedor / Maringá, PR / 2011 - 2012</p>
+              <h3>@@experience.elotech.title</h3>
+              <p>@@experience.elotech.sub</p>
             </header>
-            <p>Atuei no desenvolvimento de soluções na área de saúde. Palavras chave: PHP, Zend Framework, jQuery, Postgres, Full Stack, UX.</p>
+            <p>@@experience.elotech.text</p>
           </article>
         </div>
       </div>
@@ -286,7 +279,7 @@
   <section id="page-citacao" class="page-citacao animated">
     <div class="container">
       <div class="citacao">
-        <p>Everything is going to be <u>200 OK</u></p>
+        <p>@@quotation</p>
       </div>
     </div>
   </section>
@@ -295,46 +288,46 @@
   <section id="page-contact" class="page-contact">
     <div class="container">
       <header class="section-header">
-        <h2 class="section-title"><span>Contato</span></h2>
+        <h2 class="section-title"><span>@@contact.title</span></h2>
         <div class="spacer"></div>
-        <p class="section-subtitle">Quer conversar?</p>
+        <p class="section-subtitle">@@contact.sub</p>
       </header>
       <div class="row">
         <div class="col-sm-5 contact-info animated">
-          <h3>Informações de contato</h3>
-          <p><i class="fa fa-map-marker"></i> Maringá, PR, Brasil </p>
-          <p><i class="fa fa-phone"></i> / <i class="fa fa-whatsapp"></i> (44) 8806-3145</p>
-          <p><i class="fa fa-envelope-o"></i> <a href="mailto:contato@falci.me">contato@falci.me</a></p>
+          <h3>@@contact.info</h3>
+          <p><i class="fa fa-map-marker"></i> @@contact.address</p>
+          <p>@@contact.phone.icon @@contact.phone.number</p>
+          <p><i class="fa fa-envelope-o"></i> <a href="mailto:@@contact.email">@@contact.email</a></p>
         </div>
 
         <div class="col-sm-7 animated">
-          <h3>Entre em contato</h3>
+          <h3>@@contact.title</h3>
           <!-- Configure the contact form by adding your email address on mail/contact_me.php line 17 -->
           <form class="form-horizontal" id="contactForm" novalidate>
             <div class="control-group">
-              <label class="control-label" for="name">Nome</label>
+              <label class="control-label" for="name">@@contact.form.name.title</label>
               <div class="controls">
-                <input type="text" name="name" id="name" placeholder="Seu nome" class="form-control input-lg"  required data-validation-required-message="Quem é você?">
+                <input type="text" name="name" id="name" placeholder="@@contact.form.name.title" class="form-control input-lg"  required data-validation-required-message="@@contact.form.name.validation">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="email">Email</label>
+              <label class="control-label" for="email">@@contact.form.email.title</label>
               <div class="controls">
-                <input type="email" name="email" id="email" placeholder="Seu email" class="form-control input-lg"  required data-validation-required-message="Me passa seu email para eu poder responder">
+                <input type="email" name="email" id="email" placeholder="@@contact.form.email.placeholder" class="form-control input-lg"  required data-validation-required-message="@@contact.form.email.validation">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="message">Mensagem</label>
+              <label class="control-label" for="message">@@contact.form.message.title</label>
               <div class="controls">
-                <textarea name="message" id="message" rows="8" class="form-control input-lg" required data-validation-required-message="Ahhh.. escreva algo..."></textarea>
+                <textarea name="message" id="message" rows="8" class="form-control input-lg" required data-validation-required-message="@@contact.form.message.validation"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="form-actions">
             <div id="success"></div>
-              <button type="submit" class="btn btn-default btn-lg btn-block">Enviar Mensagem</button>
+              <button type="submit" class="btn btn-default btn-lg btn-block">@@contact.form.submit</button>
             </div>
           </form>
             <!-- End contact-form -->
@@ -345,6 +338,7 @@
     </div>
   </section>
   <!-- contact ends -->
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
@@ -357,10 +351,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/jquery.magnific-popup.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"></script>
-  <script src="js/contact_me.js"></script>
-  <script src="js/main.js"></script>
+  <script src="i18n.js"></script>
+  <script src="../js/contact_me.js"></script>
+  <script src="../js/main.js"></script>
 
   <script>
+    var lang = 'en';
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
