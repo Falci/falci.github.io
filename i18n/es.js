@@ -4,7 +4,7 @@ module.exports = {
   toggle: 'Alternar navegación',
 
   name: 'Fernando Falci',
-  developer: 'Desarrollador',
+  developer: 'Desarrollador de software',
 
   home: 'Home',
   profile: {
