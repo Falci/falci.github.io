@@ -33,6 +33,11 @@ img.foto {
     margin: 15px auto 0 auto;
 }
 
+.face:hover{
+    text-decoration: none;
+    color: #FFF;
+}
+
 .face img{
     width: 40px;
     padding: 10px;
