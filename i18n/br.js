@@ -67,7 +67,7 @@ module.exports = {
     title: 'Contato',
     sub: 'Quer conversar?',
     info: 'Informações de contato',
-    address: 'Maringá, PR, Brasil',
+    address: 'Barcelona, Espanha',
     email: 'contato@falci.me',
     phone: {
       icon: '<i class="fa fa-phone"></i> / <i class="fa fa-whatsapp"></i>',

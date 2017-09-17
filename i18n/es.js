@@ -68,11 +68,11 @@ module.exports = {
     title: 'Contacto',
     sub: 'Hablemos',
     info: 'Información del contacto',
-    address: 'Maringá, Paraná, Brasil',
+    address: 'Barcelona, España',
     email: 'contacto@falci.me',
     phone: {
       icon: '<i class="fa fa-phone"></i>',
-      number: '+55 (44) 9 8806-3145'
+      number: '611 231 876'
     },
     form: {
       name: {
