@@ -75,8 +75,7 @@ $(document).ready(function() {
         filter: '',
         easing: 'swing',
         scrollChange: function (li) {
-          var base = typeof lang !== 'undefined' ? ('/' + lang) : '',
-            page = $('a', li).attr('href').replace('#page-', base + '/');
+          var page = $('a', li).attr('href').replace('#page-', '/');
           ga('send', 'pageview', page);
         }
     });
@@ -154,8 +153,8 @@ $(document).ready(function() {
             { src: '/img/slider/03.jpg' },
             { src: '/img/slider/04.jpg' }
         ],
-    overlay: true
-});
+        overlay: true
+    });
 
     $('#vegas-next').click(function() {
         $('#page-welcome').vegas('next');

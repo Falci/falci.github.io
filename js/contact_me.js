@@ -5,6 +5,11 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault();
 
+      ga('send', 'event', {
+        'eventCategory': 'contact',
+        'eventAction': 'send'
+      });
+
       var name = $("input#name").val(),
         email = $("input#email").val(),
         message = $("textarea#message").val(),
@@ -39,6 +44,11 @@ $(function() {
               .append('</div>');
 
             $('#contactForm').trigger("reset");
+
+            ga('send', 'event', {
+              'eventCategory': 'contact',
+              'eventAction': 'success'
+            });
           },
           error: function() {
 
@@ -55,6 +65,11 @@ $(function() {
             $('#success > .alert-danger').append('</div>');
 
             $('#contactForm').trigger("reset");
+
+            ga('send', 'event', {
+              'eventCategory': 'contact',
+              'eventAction': 'error'
+            });
           },
         })
       },
