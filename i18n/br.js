@@ -71,7 +71,7 @@ module.exports = {
     email: 'contato@falci.me',
     phone: {
       icon: '<i class="fa fa-phone"></i> / <i class="fa fa-whatsapp"></i>',
-      number: '(44) 9 8806-3145'
+      number: '+55 (44) 9 8806-3145'
     },
     form: {
       name: {
