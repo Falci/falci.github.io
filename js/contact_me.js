@@ -7,7 +7,8 @@ $(function() {
 
       ga('send', 'event', {
         'eventCategory': 'contact',
-        'eventAction': 'send'
+        'eventAction': 'send',
+        'eventLabel': 'send'
       });
 
       var name = $("input#name").val(),
@@ -47,10 +48,11 @@ $(function() {
 
             ga('send', 'event', {
               'eventCategory': 'contact',
-              'eventAction': 'success'
+              'eventAction': 'send',
+              'eventLabel': 'success'
             });
           },
-          error: function() {
+          error: function(e) {
 
             $('#success')
               .html("<div class='alert alert-danger'>");
@@ -68,7 +70,12 @@ $(function() {
 
             ga('send', 'event', {
               'eventCategory': 'contact',
-              'eventAction': 'error'
+              'eventAction': 'send',
+              'eventLabel': 'fail'
+            });
+
+            ga('send', 'exception', {
+              'exDescription': e
             });
           },
         })
