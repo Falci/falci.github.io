@@ -1,0 +1,1 @@
+This folder's content was generated using [favicon-generator.org](https://www.favicon-generator.org/)
