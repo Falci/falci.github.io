@@ -1,5 +1,10 @@
 {
- "name": "App",
+ "name": "Falci's Profile",
+ "short_name": "Falci",
+ "lang": "pt-BR",
+ "start_url": "/?pwa",
+ "display": "standalone",
+ "theme_color": "#21B37D",
  "icons": [
   {
    "src": "\/favicon\/android-icon-36x36.png",

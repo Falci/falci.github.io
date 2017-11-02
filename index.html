@@ -3,7 +3,6 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Fernando Falci">
     <meta name="description" content="Falci's profile">
     <meta property="og:type" content="profile">
@@ -29,7 +28,17 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
+    <meta name="application-name" content="Falci">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Falci">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#21B37D">
+    <meta name="msapplication-navbutton-color" content="#21B37D">
+    <meta name="msapplication-starturl" content="/?pwa">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
     <title>Fernando Falci</title>
     <link rel="stylesheet" href="style.css">
@@ -108,6 +117,24 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-2568035-30', 'auto');
+      ga('send', 'pageview', '/');
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            ga('send', 'event', 'serviceWorker', 'load', 'success');
+          }, function() {
+            ga('send', 'event', 'serviceWorker', 'load', 'fail');
+          });
+        });
+      }
+    </script>
   </body>
 
 </html>
