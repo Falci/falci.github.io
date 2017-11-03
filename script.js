@@ -54,3 +54,14 @@ TxtType.prototype.tick = function() {
 
 
 new TxtType(role, roles);
+
+const links = document.getElementsByTagName('a'),
+  tracking = ['mouseover', 'click'];
+
+for (let i=0; i<links.length; i++){
+  const link = links.item(i);
+
+  if (link.title) {
+    tracking.forEach(track => link.addEventListener(track, () => ga('send', 'event', 'link', track, link.title), false));
+  }
+}
