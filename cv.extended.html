@@ -8,7 +8,7 @@
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Fernando Falci">
   <meta property="og:url" content="https://falci.me/">
-  <meta property="og:image" content="https://falci.me/me.jpeg">
+  <meta property="og:image" content="https://falci.me/images/me.jpeg">
   <meta property="profile:first_name" content="Fernando">
   <meta property="profile:last_name" content="Falci">
 
@@ -116,15 +116,24 @@
     h4 {
       margin: 10px 0 6px;
       font-size: 1.2em;
-      color: #2DB27E;
+      color: #EC3136;
     }
 
     section.title {
       padding-bottom: 10px;
     }
     section.title .role {
-      color: #2DB27E;
+      color: #EC3136;
       font-size: 2em;
+    }
+
+    section.qrcode {
+      width: 220px;
+      text-align: left;
+    }
+
+    section.qrcode img {
+      width: 200px;
     }
 
     section.photo {
@@ -154,7 +163,7 @@
       font-weight: bold;
     }
     section.contact ul li i {
-      color: #2DB27E;
+      color: #EC3136;
       padding: 0 3px;
       width: 15px;
       text-align: center;
@@ -210,8 +219,8 @@
       box-sizing: border-box;
     }
     ul.progress li.active {
-      background-color: #2DB27E;
-      border-color: #2DB27E;
+      background-color: #EC3136;
+      border-color: #EC3136;
     }
 
     ul.box li {
@@ -254,6 +263,18 @@
         left: -10px;
         top: -50px;
       }
+      section.photo img {
+        width: 160px;
+        position: absolute;
+        left: -10px;
+        top: -50px;
+      }
+      section.qrcode {
+        width: 160px;
+      }
+      section.qrcode img {
+        width: 150px;
+      }
 
       section .item {
         padding-bottom: 5px;
@@ -293,9 +314,12 @@
         </ul>
       </section>
     </div>
-    <div class="col-right right">
+    <div class="col-right right flex">
+      <section class="qrcode">
+        <img src="images/qr_code.png" />
+      </section>
       <section class="photo">
-        <img src="https://falci.me/me.jpeg" alt="Fernando Falci">
+        <img src="images/me.jpeg" alt="Fernando Falci">
       </section>
     </div>
   </header>
@@ -664,9 +688,12 @@
           </ul>
         </section>
       </div>
-      <div class="col-right right">
+      <div class="col-right right flex">
+        <section class="qrcode">
+          <img src="images/qr_code.png" />
+        </section>
         <section class="photo">
-          <img src="https://falci.me/me.jpeg" alt="Fernando Falci">
+          <img src="images/me.jpeg" alt="Fernando Falci">
         </section>
       </div>
     </header>
