@@ -52,7 +52,6 @@ TxtType.prototype.tick = function() {
   }, delta);
 };
 
-
 new TxtType(role, roles);
 
 const links = document.getElementsByTagName('a'),
@@ -65,3 +64,16 @@ for (let i=0; i<links.length; i++){
     tracking.forEach(track => link.addEventListener(track, () => ga('send', 'event', 'link', track, link.title), false));
   }
 }
+
+
+const age = document.getElementById('age');
+const birth = 607842000;
+const date = new Date();
+let years = date.getFullYear() - 1989;
+if (date.getMonth() < 3) years--;
+
+age.title = `Around ${years} years`;
+
+setInterval(() => {
+  age.innerText = Math.ceil(Date.now()/1000) - birth;
+}, 1000);
