@@ -129,6 +129,18 @@ a {
     top: -80px;
 }
 
+.photo img.yellow {
+    top: -458px;
+    width: 165%;
+    opacity: 0;
+    left: -90px;
+    transition: all 1s;
+}
+.photo img.yellow:hover {
+    opacity: 1;
+    transition: all 2s;
+}
+
 .info {
     padding: 15px 10px 0;
     position: relative;
