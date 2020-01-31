@@ -64,6 +64,8 @@ for (let i=0; i<links.length; i++){
     tracking.forEach(track => link.addEventListener(track, () => ga('send', 'event', 'link', track, link.title), false));
   }
 }
+document.querySelector('img.yellow')
+   .addEventListener('mouseover', () => ga('send', 'event', 'link', 'mouseover', 'yellow'), false)
 
 
 const age = document.getElementById('age');
