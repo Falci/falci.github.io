@@ -4,6 +4,6 @@
   "tag":"payRequest",
   "maxSendable":100000000,
   "minSendable":1000,
-  "metadata":"[[\"text/identifier\", \"falci@ln.falci.me\"], [\"text/plain\", \"Sats for falci.me\"]]",
+  "metadata":"[[\"text/identifier\", \"ln@falci.me\"], [\"text/plain\", \"Sats for ln@falci.me\"]]",
   "commentAllowed":0
 }
