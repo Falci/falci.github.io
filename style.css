@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+:root {
+    --border-radius: 0.5rem;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -12,16 +16,24 @@ a {
 }
 
 .background {
-    width: 100%;
-    height: 200px;
-    background-color: #21B37D;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #fa8c16, #ff7875, #2f54eb, #73d13d);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
     position: absolute;
     top: 0;
-    z-index: -1;
 }
-@media only screen and (min-width: 640px) {
-    .background {
-        height: 50%;
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -30,9 +42,9 @@ a {
     min-width: 280px;
     margin: 20px auto;
     background-color: #FFF;
-    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
-    z-index: 1;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 16px 10px;
     display: flex;
+    border-radius: var(--border-radius);
 }
 @media only screen and (min-width: 640px) {
     .card {
@@ -112,6 +124,7 @@ a {
     display: none;
     width: 42%;
     height: 100%;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 @media only screen and (min-width: 640px) {
     .card > .photo {
@@ -181,6 +194,7 @@ footer {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 @media only screen and (min-width: 640px) {
     footer {
@@ -188,6 +202,7 @@ footer {
         bottom: 0;
         right: 0;
         width: calc(100% + 1px);
+        border-radius: 0 0 var(--border-radius) 0;
     }
 }
 footer a {
