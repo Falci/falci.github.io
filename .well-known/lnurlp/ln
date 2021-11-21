@@ -1,9 +1,0 @@
-{
-  "status":"OK",
-  "callback":"https://ln.falci.me/.well-known/lnurlp/falci",
-  "tag":"payRequest",
-  "maxSendable":100000000,
-  "minSendable":1000,
-  "metadata":"[[\"text/identifier\", \"ln@falci.me\"], [\"text/plain\", \"Sats for ln@falci.me\"]]",
-  "commentAllowed":0
-}
