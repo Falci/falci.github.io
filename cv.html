@@ -377,7 +377,7 @@
             </ul>
           </section>
         </div>
-        <div class="col-right right flex">
+        <div class="flex col-right right">
           <section class="qrcode">
             <img src="images/qr_code.png" />
           </section>
@@ -413,12 +413,12 @@
                 <li>React</li>
                 <li>Design System</li>
                 <li>Scrum</li>
+                <li>NodeJS</li>
+                <li>JS/TS</li>
                 <li>CSS/SCSS</li>
                 <li>Webpack</li>
                 <li>Travis</li>
                 <li>AWS</li>
-                <li>TDD</li>
-                <li>Agile</li>
                 <li>Unit Testing</li>
               </ul>
             </div>
@@ -553,8 +553,9 @@
                 <li>Javascript/ES6/ES7</li>
                 <li>HTML5</li>
                 <li>CSS/SASS/LESS</li>
+                <li>React 16~18</li>
+                <li>Microfrontend</li>
                 <li>AngularJS 1/6</li>
-                <li>React</li>
               </ul>
             </div>
 
@@ -562,9 +563,7 @@
               <h4>Backend</h4>
               <ul class="box">
                 <li>NodeJS</li>
-                <li>Java</li>
-                <li>Spring</li>
-                <li>Maven</li>
+                <li>GraphQL</li>
                 <li>NPM</li>
                 <li>REST</li>
               </ul>
@@ -589,11 +588,11 @@
     </div>
 
     <script>
-      (function(i, s, o, g, r, a, m) {
+      (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -612,12 +611,12 @@
       ga('send', 'pageview', '/cv.html');
 
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
           navigator.serviceWorker.register('/sw.js').then(
-            function(registration) {
+            function (registration) {
               ga('send', 'event', 'serviceWorker', 'load', 'success');
             },
-            function() {
+            function () {
               ga('send', 'event', 'serviceWorker', 'load', 'fail');
             }
           );
