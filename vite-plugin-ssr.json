@@ -1,0 +1,7 @@
+{
+  "version": "0.4.19",
+  "usesClientRouter": false,
+  "baseUrl": "/",
+  "baseAssets": null,
+  "includeAssetsImportedByServer": true
+}

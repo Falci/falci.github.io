@@ -1,0 +1,2 @@
+Contact: mailto:security.falci@falci.me
+Preferred-Languages: en, pt-BR

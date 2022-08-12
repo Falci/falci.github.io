@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: falci.me
+Token: a5a1a11c623f40c3806d4c65b4a9e247751cf2048775b69d1413b0da97f69abc

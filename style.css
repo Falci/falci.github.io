@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+:root {
+    --border-radius: 0.5rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #fa8c16, #ff7875, #2f54eb, #73d13d);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    width: 95%;
+    min-width: 280px;
+    margin: 20px auto;
+    background-color: #FFF;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 16px 10px;
+    display: flex;
+    border-radius: var(--border-radius);
+}
+@media only screen and (min-width: 640px) {
+    .card {
+        width: 610px;
+        height: 300px;
+        margin: 0;
+        position: absolute;
+        top: calc(50vh - 275px/2);
+        left: calc(50vw - 610px/2);
+    }
+}
+.card .right {
+    position: relative;
+    width: 100%;
+}
+@media only screen and (min-width: 640px) {
+    .card .right {
+        width: 58%;
+    }
+}
+
+.flex {
+    display: flex;
+}
+@media only screen and (min-width: 640px) {
+    .flex .right {
+        width: 100%;
+    }
+}
+.flex .photo {
+    width: 200px;
+    height: 160px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 382px) {
+    .flex .photo {
+        display: none;
+    }
+}
+.flex .photo img {
+    top: -10vw;
+}
+@media only screen and (min-width: 640px) {
+    .flex .photo {
+        display: none;
+    }
+}
+
+.tooltip {
+    font-size: .8em;
+    position: relative;
+    margin-bottom: 8px;
+}
+.tooltip span {
+    background-color: #21B37D;
+    color: #FFF;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+}
+.tooltip:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-top: 10px solid #21B37D;
+    border-left: 10px solid #21B37D;
+    z-index: 0;
+}
+
+.card > .photo {
+    display: none;
+    width: 42%;
+    height: 100%;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+@media only screen and (min-width: 640px) {
+    .card > .photo {
+        display: inline-block;
+    }
+}
+
+.photo {
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.photo img {
+    width: 100%;
+    position: relative;
+    top: -80px;
+}
+
+.photo img.yellow {
+    top: -458px;
+    width: 165%;
+    opacity: 0;
+    left: -90px;
+    transition: all 1s;
+}
+.photo img.yellow:hover {
+    opacity: 1;
+    transition: all 2s;
+}
+
+.info {
+    padding: 15px 10px 0;
+    position: relative;
+}
+.info .name {
+    color: #21B37D;
+    text-transform: uppercase;
+    margin: 2px;
+}
+.info .name:before {
+    content: 'I\'m ';
+    font-weight: 100;
+    color: #000;
+}
+.info .sub {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 3px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    padding: 3px 0;
+}
+.row .left {
+    font-weight: 700;
+    width: 80px;
+    display: inline-block;
+}
+.row .left:after {
+    content: ':';
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: #21B37D;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+@media only screen and (min-width: 640px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: calc(100% + 1px);
+        border-radius: 0 0 var(--border-radius) 0;
+    }
+}
+footer a {
+    color: #FFF;
+}
