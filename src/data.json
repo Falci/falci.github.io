@@ -1,0 +1,61 @@
+{
+  "info": [
+    { "label": "Location", "value": "Barcelona" },
+    { "label": "Experience", "value": "10+ years" },
+    { "label": "Availabilty", "value": "1 month" },
+    { "label": "Relocation", "value": "Amsterdam area" }
+  ],
+  "skills": ["HTML/CSS", "JS/TS", "React", "NodeJS", "GraphQL"],
+  "experience": [
+    {
+      "image": "/images/adevinta.avif",
+      "title": "Senior Frontend Developer",
+      "company": "Adevinta",
+      "location": "Spain",
+      "period": "Feb 2020 - Present",
+      "text": "With many websites accross the world, Adevinta is one of the biggest companies focused on dedicated marketplaces. I work on the frontend of the company's backoffice, mainly in React (Typescript) and Rest/GraphQL. I also work on the backend, mainly in NodeJS. Here I had the opportunity to work with Module Federation and MonoRepo to make the company's codebase more modular and reusable."
+    },
+    {
+      "image": "/images/edreams.avif",
+      "title": "Javascript Developer",
+      "company": "eDreams Odigeo",
+      "location": "Spain",
+      "period": "Jun 2017 - Feb 2020",
+      "text": "eDreams is a travel agency focused on the travel industry. I worked on the frontend of the company's website, mainly in Backbone, transitioning to React. Strong attention to details when following the UX desigers' mock-us. I also gained a lot of knowledge related to A/B testing."
+    },
+    {
+      "image": "/images/mobiledi.avif",
+      "title": "Development Analyst",
+      "company": "Mobile-DI",
+      "location": "Remote",
+      "period": "2015 - Mar 2018",
+      "text": "Mobile-DI is a software company that provides software development services to enterprises and governments. I worked as an analyst at Mobile-DI, where I designed and help to implement the solution for each client. I also lead a team of frontend developers, remotely. I worked on a variety of projects, most of them Angular and AngularJS."
+    },
+    {
+      "image": "/images/matera.avif",
+      "title": "Frontend Developer",
+      "company": "MATERA Systems",
+      "location": "Brazil",
+      "period": "Nov 2014 - Jun 2017",
+      "text": "MATERA Systems is a software company that provides software development services for the banking sector. I worked mainly in a remote team, where I code the frontend following the mock-ups profided by the UX designers."
+    }
+  ],
+  "education": [
+    {
+      "image": "/images/cesumar.avif",
+      "title": "Object Oriented Development in Java",
+      "company": "UniCesumar",
+      "location": "Brazil",
+      "period": "2012 - 2013*",
+      "text": ""
+    },
+    {
+      "image": "/images/unipar.avif",
+      "title": "Analysis and Software Development",
+      "company": "UNIPAR",
+      "location": "Brazil",
+      "period": "2007 - 2009",
+      "text": ""
+    }
+  ]
+}
