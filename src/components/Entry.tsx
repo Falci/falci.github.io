@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default ({ Icon, data }: Props) => (
-  <div className="flex space-x-2 py-4">
+  <div className="flex space-x-2 py-4 print:py-2">
     <div className="rounded-lg overflow-hidden w-16 h-14">
       <img src={data.image} alt={data.company} width={58} height={58} />
     </div>

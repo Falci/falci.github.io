@@ -2,7 +2,7 @@ import Card from '../components/Card';
 
 export default () => (
   <Card title="About me">
-    <div className="text-gray-600 flex flex-col space-y-4 text-justify">
+    <div className="text-gray-600 flex flex-col space-y-4 text-justify print:text-left print:space-y-2">
       <p>
         I'm a passionate developer and have been working on web development in
         the last decade.

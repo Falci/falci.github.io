@@ -8,12 +8,14 @@ interface Props {
 }
 
 export default ({ data }: Props) => (
-  <Card title="Information">
-    <div className="flex flex-col space-y-2">
+  <Card title="Information" className="min-w-fit">
+    <div className="flex flex-col space-y-2 w-full">
       {data.map(({ label, value }) => (
-        <div className="flex justify-between" key={label}>
+        <div className="flex justify-between space-x-2" key={label}>
           <div className="text-gray-500">{label}</div>
-          <div className="font-medium text-right text-gray-600">{value}</div>
+          <div className="font-medium text-right text-gray-600 whitespace-nowrap">
+            {value}
+          </div>
         </div>
       ))}
     </div>

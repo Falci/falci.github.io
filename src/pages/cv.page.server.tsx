@@ -10,18 +10,18 @@ import Skills from '../sections/Skills';
 import '../index.css';
 
 export const Page = () => (
-  <div className="h-screen p-2 md:p-5 md:pb-2 bg-gray-200 overflow-scroll flex flex-col justify-between">
-    <div className="max-w-4xl mx-auto flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 min-w-[250px]">
-      <div className="flex flex-col space-y-4 lg:min-w-[280px] md:flex-row md:space-y-0 md:space-x-4 lg:flex-col lg:space-y-4 lg:space-x-0">
-        <Profile />
+  <div className="h-screen p-2 md:p-5 md:pb-2 print:p-0 bg-gray-200 overflow-scroll flex flex-col justify-between print:h-fit">
+    <div className="max-w-4xl mx-auto flex flex-col lg:flex-row space-y-4 print:space-y-0 lg:space-y-0 lg:space-x-4 min-w-[250px]">
+      <div className="flex flex-col space-y-4 lg:min-w-[280px] md:flex-row md:space-y-0 md:space-x-4 lg:flex-col lg:space-y-4 lg:space-x-0 print:flex-row print:space-y-0">
+        <Profile className="print:border-r md:grow lg:grow-0" />
 
-        <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:space-x-0 lg:space-y-4 lg:flex-col">
+        <div className="flex flex-col grow space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:space-x-0 lg:space-y-4 lg:flex-col print:flex-row print:divide-x print:space-y-0">
           <Info data={data.info} />
           <Skills data={data.skills} />
         </div>
       </div>
 
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-4 print:space-y-2">
         <About />
         <Entries
           title="Experience"
@@ -35,6 +35,13 @@ export const Page = () => (
           Icon={Company}
           linkedinUrl="https://www.linkedin.com/in/fernandofalci/details/education/?locale=en_US"
         />
+        <div className="hidden print:flex pt-[30rem] justify-between items-end">
+          <Profile />
+          <div className="text-sm text-gray-500">
+            Visit <span className="underline">falci.me/cv</span> for the most
+            updated version.
+          </div>
+        </div>
       </div>
     </div>
 

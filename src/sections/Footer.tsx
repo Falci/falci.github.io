@@ -1,6 +1,6 @@
 export default () => (
-  <footer className="flex justify-center text-xs w-full mt-4 text-gray-700">
-    <div>
+  <footer className="flex flex-col items-center print:items-end text-xs w-full mt-4 text-gray-700">
+    <div className="print:hidden">
       Inspired by{' '}
       <a
         href="https://launchoice.com/"
@@ -17,6 +17,9 @@ export default () => (
       >
         Personal CV
       </a>{' '}
+    </div>
+    <div className="print:hidden">
+      Trick: try to print this page and check how it looks.
     </div>
   </footer>
 );
