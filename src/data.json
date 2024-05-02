@@ -1,19 +1,27 @@
 {
   "info": [
-    { "label": "Location", "value": "Barcelona" },
+    { "label": "Location", "value": "Barcelona Area" },
     { "label": "Experience", "value": "10+ years" },
-    { "label": "Availabilty", "value": "1 month" },
-    { "label": "Relocation", "value": "Amsterdam area" }
+    { "label": "Availability", "value": "1 month" },
+    { "label": "Relocation", "value": "Open to proposals" }
   ],
   "skills": ["HTML/CSS", "JS/TS", "React", "NodeJS", "GraphQL"],
   "experience": [
+    {
+      "image": "/images/namebase.avif",
+      "title": "Senior Software Developer",
+      "company": "Namebase",
+      "location": "Remote",
+      "period": "Sep 2022 - Present",
+      "text": "Namebase is a company that provides a platform for buying and selling Handshake domains. I work on the frontend of the company's website, mainly in React (Typescript) and Rest/GraphQL. I also work on the backend, mainly in NodeJS. Here I also had the opportunity to work with NextJS and Vercel."
+    },
     {
       "image": "/images/adevinta.avif",
       "title": "Senior Frontend Developer",
       "company": "Adevinta",
       "location": "Spain",
-      "period": "Feb 2020 - Present",
-      "text": "With many websites accross the world, Adevinta is one of the biggest companies focused on dedicated marketplaces. I work on the frontend of the company's backoffice, mainly in React (Typescript) and Rest/GraphQL. I also work on the backend, mainly in NodeJS. Here I had the opportunity to work with Module Federation and MonoRepo to make the company's codebase more modular and reusable."
+      "period": "Feb 2020 - Feb 2023",
+      "text": "With many websites across the world, Adevinta is one of the biggest companies focused on dedicated marketplaces. I work on the frontend of the company's back office, mainly in React (Typescript) and Rest/GraphQL. I also work on the backend, mainly in NodeJS. Here I had the opportunity to work with Module Federation and MonoRepo to make the company's codebase more modular and reusable."
     },
     {
       "image": "/images/edreams.avif",
@@ -21,7 +29,7 @@
       "company": "eDreams Odigeo",
       "location": "Spain",
       "period": "Jun 2017 - Feb 2020",
-      "text": "eDreams is a travel agency focused on the travel industry. I worked on the frontend of the company's website, mainly in Backbone, transitioning to React. Strong attention to details when following the UX desigers' mock-us. I also gained a lot of knowledge related to A/B testing."
+      "text": "eDreams is a travel agency focused on the travel industry. I worked on the frontend of the company's website, mainly in Backbone, transitioning to React. Strong attention to details when following the UX designers' mock-us. I also gained a lot of knowledge related to A/B testing."
     },
     {
       "image": "/images/mobiledi.avif",
@@ -37,7 +45,7 @@
       "company": "MATERA Systems",
       "location": "Brazil",
       "period": "Nov 2014 - Jun 2017",
-      "text": "MATERA Systems is a software company that provides software development services for the banking sector. I worked mainly in a remote team, where I code the frontend following the mock-ups profided by the UX designers."
+      "text": "MATERA Systems is a software company that provides software development services for the banking sector. I worked mainly in a remote team, where I code the frontend following the mock-ups provided by the UX designers."
     }
   ],
   "education": [
