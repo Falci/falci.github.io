@@ -35,11 +35,16 @@ export const Page = () => (
           Icon={Company}
           linkedinUrl="https://www.linkedin.com/in/fernandofalci/details/education/?locale=en_US"
         />
-        <div className="hidden print:flex pt-[30rem] justify-between items-end">
-          <Profile />
-          <div className="text-sm text-gray-500">
-            Visit <span className="underline">falci.me/cv</span> for the most
-            updated version.
+        <div className="hidden print:flex print:pt-[6rem] justify-between items-start gap-4">
+          <div className="shrink-0">
+            <Profile />
+          </div>
+          <div className="flex flex-col gap-2 items-end">
+            <img src="/images/qr.avif" height={150} width={150} />
+            <div className="text-sm text-gray-500 text-right">
+              Visit <span className="underline">falci.me/cv</span> for the most
+              updated version.
+            </div>
           </div>
         </div>
       </div>

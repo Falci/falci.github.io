@@ -3,7 +3,7 @@
     { "label": "Location", "value": "Barcelona Area" },
     { "label": "Experience", "value": "10+ years" },
     { "label": "Availability", "value": "1 month" },
-    { "label": "Relocation", "value": "Open to proposals" }
+    { "label": "Relocation", "value": "Open" }
   ],
   "skills": ["HTML/CSS", "JS/TS", "React", "NodeJS", "GraphQL"],
   "experience": [
