@@ -54,10 +54,12 @@ export default ({ className }: Props) => (
     <div className="p-4 bg-white flex flex-wrap justify-between">
       <div className="mb-2 mr-2">
         <div className="text-lg font-bold">Fernando Falci</div>
-        <div className="text-sm text-gray-500 print:text-black">
-          Senior Developer
+        <div className="flex items-center gap-2 divide-x">
+          <div className="text-sm text-gray-500 print:text-black">
+            Senior Developer
+          </div>
+          <div className="text-sm hidden print:block pl-2">print@falci.me</div>
         </div>
-        <div className="text-sm hidden print:block">print@falci.me</div>
       </div>
       <a
         href="/download/cv.pdf"

@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Calendar from '../icons/Calendar';
 import Location from '../icons/Location';
 import { EntityType, IconType } from '../types';
@@ -5,10 +6,15 @@ import { EntityType, IconType } from '../types';
 interface Props {
   Icon: IconType;
   data: EntityType;
+  breakPage?: boolean;
 }
 
-export default ({ Icon, data }: Props) => (
-  <div className="flex space-x-2 py-4 print:py-2">
+export default ({ Icon, data, breakPage }: Props) => (
+  <div
+    className={cn('flex space-x-2 py-4 print:py-2', {
+      'break-after-page': breakPage,
+    })}
+  >
     <div className="rounded-lg overflow-hidden w-16 h-14">
       <img src={data.image} alt={data.company} width={58} height={58} />
     </div>

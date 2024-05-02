@@ -14,7 +14,12 @@ export default ({ title, Icon, data, linkedinUrl }: Props) => (
   <Card title={title}>
     <div className="flex flex-col divide-y">
       {data.map((item) => (
-        <Entry data={item} Icon={Icon} key={item.company} />
+        <Entry
+          data={item}
+          Icon={Icon}
+          key={item.company}
+          breakPage={item.company === 'Adevinta'}
+        />
       ))}
       <ViewMore href={linkedinUrl} />
     </div>
