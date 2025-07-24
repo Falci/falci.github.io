@@ -9,7 +9,7 @@ export default ({ data }: Props) => (
     <div className="flex flex-wrap md:flex-col lg:flex-row print:flex-col">
       {data.map((item) => (
         <div
-          className="bg-blue-100 text-blue-700 px-2 py-1 mb-2 mr-2 text-sm rounded-lg shadow text-center print:text-left print:rounded-none print:shadow-none print:mb-0"
+          className="bg-blue-100 text-blue-700 px-2 py-1 mb-2 mr-2 text-sm rounded-lg shadow-sm text-center print:text-left print:rounded-none print:shadow-none print:mb-0"
           key={item}
         >
           {item}

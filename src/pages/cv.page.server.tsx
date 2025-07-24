@@ -35,7 +35,7 @@ export const Page = () => (
           Icon={Company}
           linkedinUrl="https://www.linkedin.com/in/fernandofalci/details/education/?locale=en_US"
         />
-        <div className="hidden print:flex print:pt-[6rem] justify-between items-start gap-4">
+        <div className="hidden print:flex print:pt-24 justify-between items-start gap-4">
           <div className="shrink-0">
             <Profile />
           </div>
