@@ -1,6 +1,6 @@
 import '../index.css';
-
 import { FaEnvelope, FaLink, FaMapPin, FaPhone } from 'react-icons/fa';
+
 export const Page = () => (
   <div className="h-screen">
     <div className="mx-auto max-w-5xl flex shadow-lg mt-10 border border-gray-200 print:mt-0 print:max-w-auto print:border-none print:shadow-none print:h-full">
