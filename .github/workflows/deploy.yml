@@ -24,6 +24,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
       - name: Install deps
         uses: borales/actions-yarn@v5
         with:
