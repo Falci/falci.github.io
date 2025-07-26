@@ -13,6 +13,7 @@
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "vite-plugin-ssr": "^0.4.19"
   },
   "devDependencies": {
