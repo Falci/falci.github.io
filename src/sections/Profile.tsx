@@ -18,7 +18,7 @@ export default ({ className }: Props) => (
     ></div>
 
     <div className="w-full px-4 pt-2 flex -mt-16 print:mt-0 items-end justify-between">
-      <div className="rounded-lg shadow w-fit overflow-hidden p-1 bg-white">
+      <div className="rounded-lg shadow-sm w-fit overflow-hidden p-1 bg-white">
         <img
           src="/images/me.avif"
           className="w-24 print:w-40 h-24 rounded-lg"
@@ -44,7 +44,7 @@ export default ({ className }: Props) => (
           <span className="hidden print:block">@falci</span>
         </a>
         <div
-          className="mb-2 bg-green-200 px-2 py-1 text-xs rounded-2xl shadow font-bold text-green-800 print:hidden"
+          className="mb-2 bg-green-200 px-2 py-1 text-xs rounded-2xl shadow-sm font-bold text-green-800 print:hidden"
           title="Open to work"
         >
           OPEN
@@ -54,10 +54,12 @@ export default ({ className }: Props) => (
     <div className="p-4 bg-white flex flex-wrap justify-between">
       <div className="mb-2 mr-2">
         <div className="text-lg font-bold">Fernando Falci</div>
-        <div className="text-sm text-gray-500 print:text-black">
-          Senior Developer
+        <div className="flex items-center gap-2 divide-x">
+          <div className="text-sm text-gray-500 print:text-black">
+            Senior Developer
+          </div>
+          <div className="text-sm hidden print:block pl-2">print@falci.me</div>
         </div>
-        <div className="text-sm hidden print:block">print@falci.me</div>
       </div>
       <a
         href="/download/cv.pdf"

@@ -1,19 +1,27 @@
 {
   "info": [
-    { "label": "Location", "value": "Barcelona" },
-    { "label": "Experience", "value": "10+ years" },
-    { "label": "Availabilty", "value": "1 month" },
-    { "label": "Relocation", "value": "Amsterdam area" }
+    { "label": "Location", "value": "Barcelona Area" },
+    { "label": "Experience", "value": "15+ years" },
+    { "label": "Availability", "value": "1 month" },
+    { "label": "Relocation", "value": "Open" }
   ],
   "skills": ["HTML/CSS", "JS/TS", "React", "NodeJS", "GraphQL"],
   "experience": [
+    {
+      "image": "/images/business.avif",
+      "title": "Lead Software Engineer",
+      "company": "Freelance",
+      "location": "Remote",
+      "period": "Sep 2022 - Present",
+      "text": "Led a diverse team comprising smart contracts developers and UX designers to deliver innovative blockchain solutions. Coordinated remote collaboration, ensuring seamless integration of front-end user experiences with back-end smart contract functionality. React, Next.js, Vercel, Typescript, Java, EPP Protocol and Web3"
+    },
     {
       "image": "/images/adevinta.avif",
       "title": "Senior Frontend Developer",
       "company": "Adevinta",
       "location": "Spain",
-      "period": "Feb 2020 - Present",
-      "text": "With many websites accross the world, Adevinta is one of the biggest companies focused on dedicated marketplaces. I work on the frontend of the company's backoffice, mainly in React (Typescript) and Rest/GraphQL. I also work on the backend, mainly in NodeJS. Here I had the opportunity to work with Module Federation and MonoRepo to make the company's codebase more modular and reusable."
+      "period": "Feb 2020 - Feb 2023",
+      "text": "Contributed to a large-scale internal project, working with a multidisciplinary team to develop and maintain front-end and back-end systems. Utilized React for building dynamic user interfaces and a Federated GraphQL scheme for efficient data fetching and manipulation. React, GraphQL, Webpack Module Federation."
     },
     {
       "image": "/images/edreams.avif",
@@ -21,7 +29,7 @@
       "company": "eDreams Odigeo",
       "location": "Spain",
       "period": "Jun 2017 - Feb 2020",
-      "text": "eDreams is a travel agency focused on the travel industry. I worked on the frontend of the company's website, mainly in Backbone, transitioning to React. Strong attention to details when following the UX desigers' mock-us. I also gained a lot of knowledge related to A/B testing."
+      "text": "Spearheaded the migration of a legacy JavaScript application from Backbone.js to React, enhancing performance and maintainability. Managed the transition process, ensuring minimal disruption to a large, active user base. Conducted deep A/B testing to optimize user experience and ensure seamless feature rollouts."
     },
     {
       "image": "/images/mobiledi.avif",
@@ -29,15 +37,7 @@
       "company": "Mobile-DI",
       "location": "Remote",
       "period": "2015 - Mar 2018",
-      "text": "Mobile-DI is a software company that provides software development services to enterprises and governments. I worked as an analyst at Mobile-DI, where I designed and help to implement the solution for each client. I also lead a team of frontend developers, remotely. I worked on a variety of projects, most of them Angular and AngularJS."
-    },
-    {
-      "image": "/images/matera.avif",
-      "title": "Frontend Developer",
-      "company": "MATERA Systems",
-      "location": "Brazil",
-      "period": "Nov 2014 - Jun 2017",
-      "text": "MATERA Systems is a software company that provides software development services for the banking sector. I worked mainly in a remote team, where I code the frontend following the mock-ups profided by the UX designers."
+      "text": "Led a small, remote team of developers focused on building and maintaining applications using Angular. Conducted detailed analyses of problems and proposed effective solutions, guiding the architectural planning of projects. Mentored team members and conducted regular code reviews to maintain high coding standards and promote professional growth."
     }
   ],
   "education": [

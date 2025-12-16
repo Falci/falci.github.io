@@ -1,0 +1,18 @@
+{
+  "names": {
+    "falci": "8e2394fe446d99a7b2f3748869782b19320908d171b6ad7fc84e747106f9bc54",
+    "nostr": "8e2394fe446d99a7b2f3748869782b19320908d171b6ad7fc84e747106f9bc54",
+    "me": "8e2394fe446d99a7b2f3748869782b19320908d171b6ad7fc84e747106f9bc54",
+    "_": "8e2394fe446d99a7b2f3748869782b19320908d171b6ad7fc84e747106f9bc54"
+  },
+  "relays": {
+    "8e2394fe446d99a7b2f3748869782b19320908d171b6ad7fc84e747106f9bc54": [
+      "wss://nostr.falci.me",
+      "wss://dev-relay.kube.b-n.space",
+      "wss://nostr.jcloud.es",
+      "wss://btc.klendazu.com",
+      "wss://nostr.olwe.link",
+      "wss://relay.snort.social"
+    ]
+  }
+}

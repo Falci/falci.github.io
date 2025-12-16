@@ -18,6 +18,25 @@ export default () => (
         With strong soft skills, I have achieved great results as a team leader,
         applying agile techniques such as scrum, code review, and TDD.
       </p>
+
+      <p>
+        <small>Fun fact #1:</small>
+        <br />
+        This page has scored 100% on Google Lighthouse.
+      </p>
+
+      <p>
+        <small>Fun fact #2:</small>
+        <br />
+        The PDF version of this page is the same as the print version.
+      </p>
+
+      <p>
+        <small>Fun fact #3:</small>
+        <br />
+        This CV was generated with React but there's no Javascript after build
+        😃.
+      </p>
     </div>
   </Card>
 );

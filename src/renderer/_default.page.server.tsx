@@ -29,6 +29,11 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
           content="Fernando Falci, Fernando, Falci, Frontend Engineer, Frontend Developer, Full Stack Developer"
         />
         <meta name="author" content="Fernando Falci" />
+        <script
+          async
+          src="https://u.falci.me/script.js"
+          data-website-id="5d3212b5-f300-49a2-8906-9d2ec3bdce31"
+        ></script>
       </head>
       <body>
         <div id="page-view">${dangerouslySkipEscape(viewHtml)}</div>
