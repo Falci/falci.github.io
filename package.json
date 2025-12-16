@@ -17,11 +17,12 @@
     "vite-plugin-ssr": "^0.4.142"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "@vitejs/plugin-react": "4.7.0",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.31",
     "tailwindcss": "^4.1.11",
     "typescript": "5.8.3",
     "vite": "7.0.6"
