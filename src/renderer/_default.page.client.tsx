@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import { hydrateRoot } from 'react-dom/client';
 import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client/router';
 import { PageContext } from '../types';
 
@@ -8,8 +8,8 @@ export { render };
 
 async function render(pageContext: PageContextBuiltInClient & PageContext) {
   const { Page, pageProps } = pageContext;
-  ReactDOM.hydrate(
-    <Page {...pageProps} />,
-    document.getElementById('page-view')
-  );
+  const container = document.getElementById('page-view');
+  if (container) {
+    hydrateRoot(container, <Page {...pageProps} />);
+  }
 }
