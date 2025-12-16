@@ -18,7 +18,7 @@ export default ({ className }: Props) => (
     ></div>
 
     <div className="w-full px-4 pt-2 flex -mt-16 print:mt-0 items-end justify-between">
-      <div className="rounded-lg shadow w-fit overflow-hidden p-1 bg-white">
+      <div className="rounded-lg shadow-sm w-fit overflow-hidden p-1 bg-white">
         <img
           src="/images/me.avif"
           className="w-24 print:w-40 h-24 rounded-lg"
@@ -44,7 +44,7 @@ export default ({ className }: Props) => (
           <span className="hidden print:block">@falci</span>
         </a>
         <div
-          className="mb-2 bg-green-200 px-2 py-1 text-xs rounded-2xl shadow font-bold text-green-800 print:hidden"
+          className="mb-2 bg-green-200 px-2 py-1 text-xs rounded-2xl shadow-sm font-bold text-green-800 print:hidden"
           title="Open to work"
         >
           OPEN
