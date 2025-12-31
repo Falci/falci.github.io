@@ -27,7 +27,7 @@ export const Page = () => (
             <ul className="mt-2 flex flex-col gap-2 print:gap-0">
               <li className="flex gap-2 items-center">
                 <FaPhone className="text-xs" />
-                <span>+34 611 231 876</span>
+                <span>+506 8501 6810</span>
               </li>
               <li className="flex gap-2 items-center">
                 <FaEnvelope className="text-xs" />
@@ -39,7 +39,7 @@ export const Page = () => (
               </li>
               <li className="flex gap-2 items-center">
                 <FaMapPin className="text-xs" />
-                <span>Barcelona, Spain</span>
+                <span>Costa Rica 🇨🇷</span>
               </li>
             </ul>
           </section>
