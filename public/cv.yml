@@ -1,0 +1,301 @@
+$schema: https://raw.githubusercontent.com/hexagontk/codecv/main/cv.schema.json
+
+Personal:
+  Given Name: Fernando
+  Family Name: Falci
+  Photo: https://falci.me/images/me.avif
+
+Bio: >
+  Full-stack software engineer with 15+ years of professional experience across startups
+  and enterprise environments, specializing in React frontends, Node.js backends, and
+  technical leadership. Hands-on by nature and equally comfortable setting technical
+  direction, running hiring processes, and presenting to stakeholders.
+
+Titles:
+  - Software Engineer
+
+Technical Skills:
+  - Title: Frontend
+    Skills: [React, TypeScript, Next.js, HTML/CSS, Tailwind CSS, Storybook, TanStack Query]
+  - Title: Backend
+    Skills: [Node.js, GraphQL, Java, Spring Boot, NestJS, Express, REST APIs, gRPC]
+  - Title: Databases
+    Skills: [PostgreSQL, MySQL, Redis, DynamoDB, SQLite, Prisma]
+  - Title: Infrastructure
+    Skills: [AWS, Vercel, Kubernetes, Helm, Docker, GitHub Actions, OpenTelemetry, Prometheus, Grafana]
+  - Title: Blockchain
+    Skills: [Bitcoin, Lightning Network, Handshake, Ethereum/EVM, Solidity, Web3, DeFi, NFT]
+  - Title: Leadership
+    Skills: [Agile / Scrum, TDD, Code Reviews, Mentoring, Technical Roadmap, Architecture]
+
+Experience:
+  - Position: Sr. Software Engineer / CTO
+    Company:
+      Name: Namebase.io
+      Website: https://www.namebase.io
+    From: "2022-01"
+    To: "2026-01"
+    Projects:
+      - Title: hns.id and Namebase Platform
+        Highlights:
+          - Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace
+            and resolution platform, leading a cross-functional remote team of smart contract
+            engineers, backend developers, and UX designers.
+          - Led development of the main Namebase application, a Handshake marketplace and auction platform.
+          - Designed and implemented a custom OIDC solution with blockchain integration for secure
+            authentication and identity flows across Namebase products.
+          - Coordinated engineers contributing to the Handshake open-source protocol repository,
+            bridging platform requirements with core protocol development.
+          - Reduced AWS infrastructure costs by 40% through targeted architectural changes and
+            resource rightsizing; built observability from scratch with unified metrics, dashboards,
+            and alerting, cutting incident response times significantly.
+          - Implemented EPP (Extensible Provisioning Protocol) integrations, expanding platform
+            compatibility with global domain registries and opening new partnership opportunities.
+        Skills:
+          - TypeScript
+          - React
+          - Next.js
+          - Node.js
+          - PostgreSQL
+          - Redis
+          - DynamoDB
+          - AWS
+          - Kubernetes
+          - Helm
+          - Blockchain
+          - Handshake
+          - Ethereum/EVM
+          - Solidity
+          - OAuth2
+          - OIDC
+          - JWT
+          - OpenTelemetry
+          - Prometheus
+          - Grafana
+          - Sentry
+          - TDD
+          - CTO
+          - Leadership
+
+  - Position: Sr. Software Engineer
+    Company:
+      Name: Adevinta
+    From: "2020-01"
+    To: "2023-01"
+    Projects:
+      - Title: Backoffice Micro-Frontend Platform
+        Highlights:
+          - At Adevinta, one of Europe's largest digital marketplace groups: architected a Module
+            Federation-based refactor of the internal backoffice, enabling 4+ teams to deploy
+            independently and cutting deployment conflicts by 45%.
+          - Contributed to the company's Federated GraphQL layer, standardizing data-access
+            patterns and improving query performance.
+          - Championed test automation, CI/CD pipelines, and code review culture adopted across
+            the frontend guild.
+        Skills:
+          - TypeScript
+          - React
+          - Micro-frontends
+          - Module Federation
+          - GraphQL
+          - Node.js
+          - Webpack
+          - Nx
+          - Apache Kafka
+          - OAuth2
+          - GDPR
+          - Datadog
+          - TDD
+          - Cypress
+          - Leadership
+          - Mentoring
+
+  - Position: Sr. Software Engineer
+    Company:
+      Name: eDreams Odigeo
+    From: "2017-01"
+    To: "2020-01"
+    Projects:
+      - Title: Booking Interface Migration and A/B Testing
+        Highlights:
+          - Led the full migration of eDreams' primary booking interface from Backbone.js to
+            React (10,000+ daily active users, zero downtime), delivering 30% faster load times
+            and a 40% reduction in codebase size.
+          - Designed and ran a systematic A/B testing programme alongside product and design,
+            increasing feature adoption rates by 20%.
+        Skills:
+          - React
+          - TypeScript
+          - Redux
+          - A/B Testing
+          - Performance
+          - Migration
+          - i18n
+          - Accessibility
+          - Agile
+          - Scrum
+
+  - Position: Development Analyst
+    Company:
+      Name: Mobile-DI
+    From: "2015-01"
+    To: "2018-01"
+    Projects:
+      - Title: Enterprise Angular Applications
+        Highlights:
+          - Managed a distributed team delivering Angular applications for enterprise clients,
+            owning architectural decisions, establishing coding standards, and mentoring junior
+            developers through structured code reviews.
+          - Served as primary technical contact for stakeholders, translating business requirements
+            into engineering plans and delivery timelines.
+        Skills:
+          - Angular
+          - Architecture
+          - Leadership
+          - Mentoring
+          - Agile
+          - Scrum
+          - PostgreSQL
+          - Multi-tenancy
+
+  - Position: Software Engineer
+    Company:
+      Name: Matera Systems
+      Website: https://matera.com.br/
+    From: "2014-01"
+    To: "2017-01"
+    Projects:
+      - Title: TV/Streaming Platform
+        Highlights:
+          - Contributed to the development of a platform for a major U.S. company in the
+            TV/streaming sector, implementing features across the stack with Java and Angular
+            and collaborating closely with cross-functional teams to deliver end-to-end solutions.
+        Skills:
+          - Java
+          - Angular
+          - Microservices
+          - DDD
+          - TDD
+          - MySQL
+          - Jenkins
+
+  - Position: Junior Software Engineer
+    Company:
+      Name: IADTEC
+      Website: https://iadtec.com.br/
+    From: "2013-01"
+    To: "2014-01"
+    Projects:
+      - Title: Web Applications
+        Highlights:
+          - Developed Java-based web applications for clients in the grocery and retail sectors,
+            implementing RESTful APIs and custom UI components.
+        Skills:
+          - Java
+          - Angular
+          - REST APIs
+
+  - Position: Junior Software Engineer
+    Company:
+      Name: Elotech
+      Website: https://www.elotech.com.br/
+    From: "2011-01"
+    To: "2012-01"
+    Projects:
+      - Title: Healthcare Platform
+        Highlights:
+          - Contributed to the development of a platform for the healthcare industry, working
+            primarily with jQuery and PHP to build interactive features and backend services.
+          - Visited client sites to perform on-site deployments and support go-live activities.
+        Skills:
+          - PHP
+          - jQuery
+
+Personal Projects:
+  - Position: Open Source Contributor
+    Company:
+      Name: Handshake Protocol (HIPs)
+      Website: https://hns.dev/HIPs/
+    From: "2020-01"
+    To: null
+    Projects:
+      - Title: Handshake Improvement Proposals
+        Highlights:
+          - Principal coordinator of the HIPs repository, the formal process for proposing and
+            ratifying changes to the Handshake protocol, analogous to Bitcoin's BIPs.
+          - Authored HIP2, which was adopted by multiple ecosystem projects including BobWallet.
+          - Maintain hns.dev, an open-source resource hub for the Handshake ecosystem.
+          - Improved the documentation deployment process by creating a CI/CD pipeline that
+            automatically builds and deploys docs and HIPs on every update.
+          - Built an open-source page builder for link-in-bio style pages using Web Components.
+          - Built an open-source Handshake price tracker using Python with AI-assisted workflows
+            and SQLite.
+        Skills:
+          - Blockchain
+          - Handshake
+          - Bitcoin
+          - Open Source
+          - Python
+          - SQLite
+          - GitHub Actions
+          - Web Components
+
+  - Position: Open Source Contributor
+    Company:
+      Name: BobWallet
+      Website: https://bobwallet.io/
+    From: "2020-01"
+    To: null
+    Projects:
+      - Title: BobWallet Contributions
+        Highlights:
+          - Contributed to BobWallet, a popular Handshake wallet and name management tool,
+            implementing features such as emoji support for domain names and improving the
+            user interface for name auctions.
+        Skills:
+          - Blockchain
+          - Handshake
+          - React
+          - JavaScript
+          - Open Source
+          - i18n
+
+  - Position: Independent Developer
+    From: "2010-01"
+    To: null
+    Projects:
+      - Title: Anonymous Bot
+        Highlights:
+          - Built Anonymous Bot, a SaaS Slack bot developed with NestJS.
+        Skills:
+          - NestJS
+          - Node.js
+          - PostgreSQL
+          - Redis
+          - Stripe
+          - Prisma
+          - GitHub Actions
+          - OpenTelemetry
+          - Grafana
+          - Sentry
+          - TDD
+
+      - Title: Lightning Network Liquidity Bot
+        Highlights:
+          - Created a bot to connect Amboss' MAGMA and automate the sale of liquidity channels
+            on the Lightning Network.
+        Skills:
+          - Rust
+          - Blockchain
+          - Lightning Network
+          - Open Source
+
+      - Title: Dynamic CV
+        Highlights:
+          - Built this dynamic CV with AI-assisted workflows.
+        Skills:
+          - React
+          - TypeScript
+          - Vite
+          - GitHub Actions
+          - AI
