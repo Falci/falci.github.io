@@ -1,0 +1,429 @@
+profile:
+  name: Fernando Falci
+  title: Software Engineer
+  intro: >
+    Full-stack software engineer with 15+ years of professional experience across startups
+    and enterprise environments, specializing in React frontends, Node.js backends, and
+    technical leadership. Hands-on by nature and equally comfortable setting technical
+    direction, running hiring processes, and presenting to stakeholders.
+
+categories:
+  - label: Frontend & Web
+    tags:
+      [
+        react,
+        typescript,
+        nextjs,
+        micro-frontends,
+        module-federation,
+        migration,
+        a-b-testing,
+        performance,
+      ]
+  - label: Backend & API
+    tags: [node, graphql, java, api, backend, tdd]
+  - label: Infrastructure
+    tags: [aws, infrastructure, observability, cost-optimization]
+  - label: Leadership & Process
+    tags: [cto, leadership, mentoring, architecture, agile]
+  - label: Blockchain & Web3
+    tags: [blockchain, handshake, bitcoin, open-source, protocol]
+
+skills:
+  - label: Frontend
+    items: [React, TypeScript, Next.js, HTML/CSS]
+    tags:
+      [
+        react,
+        typescript,
+        nextjs,
+        css,
+        micro-frontends,
+        module-federation,
+        migration,
+        a-b-testing,
+        performance,
+      ]
+  - label: Backend
+    items: [Node.js, GraphQL, Java]
+    tags: [node, graphql, java, api, backend]
+  - label: Infrastructure
+    items: [AWS, Vercel, Module Federation]
+    tags:
+      [
+        aws,
+        infrastructure,
+        observability,
+        cost-optimization,
+        micro-frontends,
+        module-federation,
+      ]
+  - label: Blockchain
+    items: [Bitcoin, Lightning Network, Handshake, Web3]
+    tags: [blockchain, handshake, bitcoin, open-source, protocol]
+  - label: Leadership
+    items: [Agile / Scrum, TDD, Code Reviews, Mentoring]
+    tags: [leadership, cto, mentoring, tdd, agile, architecture]
+
+entries:
+  - type: company
+    name: Namebase.io
+    url: https://www.namebase.io
+    role: 'Sr. Software Engineer / CTO'
+    start: 2022
+    end: 2026
+    bullets:
+      - text: 'Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.'
+        tags: [
+            cto,
+            leadership,
+            blockchain,
+            handshake,
+            typescript,
+            node,
+            react,
+            next.js,
+            tailwind,
+            storybook,
+            TanStack Query,
+            vercel,
+            Ethereum / EVM,
+            Solidity / smart contract development,
+            DeFi protocols,
+            NFT standards,
+            ERC-721,
+            Layer 2 solutions,
+            Optimism,
+            Web3.js
+            TDD,
+            Technical roadmap ownership,
+          ]
+      - text: 'Led development of the main Namebase application, a Handshake marketplace and auction platform.'
+        tags: [
+            blockchain,
+            handshake,
+            node,
+            postgres,
+            redis,
+            dynamodb,
+            javascript,
+            typescript,
+            tailwind,
+            TanStack Query,
+            Database schema design,
+            AWS,
+            EC2,
+            S3,
+            RDS,
+            IAM,
+            SQS / SNS
+            azure,
+            Kubernetes,
+            Helm,
+            Unleash,
+            feature flags,
+            API versioning,
+            Rate limiting and throttling
+            SSE,
+            REST API design,
+            jwt,
+            Secrets Manager,
+            grafana,
+            opentelemetry,
+            sentry,
+            loki
+            Prometheus,
+            Unit testing,
+            Payments,
+          ]
+      - text: 'Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.'
+        tags:
+          [
+            blockchain,
+            handshake,
+            oidc,
+            authentication,
+            security,
+            node,
+            typescript,
+            api,
+            jwt,
+            OAuth2,
+          ]
+      - text: 'Coordinated engineers contributing to the Handshake open-source protocol repository, bridging platform requirements with core protocol development.'
+        tags:
+          [
+            blockchain,
+            handshake,
+            open-source,
+            leadership,
+            sql,
+            postgres,
+            express,
+          ]
+      - text: 'Reduced AWS infrastructure costs by 40% through targeted architectural changes and resource rightsizing; built observability from scratch with unified metrics, dashboards, and alerting, cutting incident response times significantly.'
+        tags:
+          [
+            aws,
+            cost-optimization,
+            infrastructure,
+            observability,
+            sql,
+            query-optimization,
+            Blue/green deployments,
+            Cost optimization (FinOps),
+          ]
+      - text: 'Implemented EPP (Extensible Provisioning Protocol) integrations, expanding platform compatibility with global domain registries and opening new partnership opportunities.'
+        tags:
+          [
+            blockchain,
+            handshake,
+            api,
+            architecture,
+            java,
+            spring boot,
+            sql,
+            mysql,
+            grafana,
+            opentelemetry,
+            loki,
+            Unit testing,
+          ]
+
+  - type: company
+    name: Adevinta
+    role: 'Sr. Software Engineer'
+    start: 2020
+    end: 2023
+    bullets:
+      - text: "At Adevinta, one of Europe's largest digital marketplace groups: architected a Module Federation-based refactor of the internal backoffice, enabling 4+ teams to deploy independently and cutting deployment conflicts by 45%."
+        tags:
+          [
+            micro-frontends,
+            module-federation,
+            typescript,
+            react,
+            architecture,
+            tailwind,
+            webpack,
+            Unleash,
+            feature flags,
+            Monorepo,
+            nx,
+            Apache Kafka,
+            REST API design,
+            jwt,
+            GDPR compliance,
+            Vulnerability scanning,
+            Snyk,
+            Incident management,
+            on-call,
+            datadog,
+            OAuth2,
+            Cross-functional collaboration (product,
+            design),
+          ]
+      - text: "Contributed to the company's Federated GraphQL layer, standardizing data-access patterns and improving query performance."
+        tags:
+          [
+            graphql,
+            api,
+            backend,
+            node,
+            express,
+            Unit testing,
+            Identity & Access Management,
+          ]
+      - text: 'Championed test automation, CI/CD pipelines, and code review culture adopted across the frontend guild.'
+        tags:
+          [
+            tdd,
+            agile,
+            kanban,
+            leadership,
+            mentoring,
+            storybook,
+            Unit testing,
+            Integration testing,
+            end-to-end testing,
+            Cypress,
+          ]
+
+  - type: company
+    name: eDreams Odigeo
+    role: 'Sr. Software Engineer'
+    start: 2017
+    end: 2020
+    bullets:
+      - text: "Led the full migration of eDreams' primary booking interface from Backbone.js to React (10,000+ daily active users, zero downtime), delivering 30% faster load times and a 40% reduction in codebase size."
+        tags:
+          [
+            react,
+            redux,
+            migration,
+            performance,
+            typescript,
+            backbone.js,
+            i18n,
+            Accessibility,
+            Agile,
+            Scrum,
+            Cross-functional collaboration (product,
+            design),
+          ]
+      - text: 'Designed and ran a systematic A/B testing programme alongside product and design, increasing feature adoption rates by 20%.'
+        tags: [a-b-testing, performance, react, i18n, Accessibility]
+
+  - type: company
+    name: Mobile-DI
+    role: 'Development Analyst'
+    start: 2015
+    end: 2018
+    bullets:
+      - text: 'Managed a distributed team delivering Angular applications for enterprise clients, owning architectural decisions, establishing coding standards, and mentoring junior developers through structured code reviews.'
+        tags:
+          [
+            leadership,
+            mentoring,
+            architecture,
+            agile,
+            scrum,
+            angular,
+            CSS Modules,
+            webpack,
+            Multi-tenancy,
+          ]
+      - text: 'Served as primary technical contact for stakeholders, translating business requirements into engineering plans and delivery timelines.'
+        tags: [leadership, cto, agile, scrum, postgres, Jenkins]
+
+  - type: company
+    name: Matera Systems
+    role: 'Software Engineer'
+    url: https://matera.com.br/
+    start: 2014
+    end: 2017
+    bullets:
+      - text: 'Contributed to the development of a platform for a major U.S. company in the TV/streaming sector, implementing features across the stack with Java and Angular and collaborating closely with cross-functional teams to deliver end-to-end solutions.'
+        tags:
+          [Microservices, angular, java, api, backend, tdd, Jenkins, mysql, ddd]
+
+  - type: company
+    name: IADTEC
+    role: 'Junior Software Engineer'
+    url: https://iadtec.com.br/
+    start: 2013
+    end: 2014
+    bullets:
+      - text: 'Developed Java-based web applications for clients in the grocery and retail sectors, implementing RESTful APIs and custom UI components.'
+        tags: [java, api, backend, angular]
+
+  - type: company
+    name: Elotech
+    role: 'Junior Software Engineer'
+    url: https://www.elotech.com.br/
+    start: 2011
+    end: 2012
+    bullets:
+      - text: 'Contributed to the development of a platform for the healthcare industry, working primarily with jQuery and PHP to build interactive features and backend services.'
+        tags: [jquery, php, zend]
+      - text: 'Visited client sites to perform on-site deployments and support go-live activities.'
+        tags: [jquery, php, zend]
+
+  - type: oss
+    name: Handshake
+    url: https://hns.dev/HIPs/
+    role: Open Source Contributor
+    start: 2020
+    end: null
+    bullets:
+      - text: "Principal coordinator of the HIPs repository, the formal process for proposing and ratifying changes to the Handshake protocol, analogous to Bitcoin's BIPs."
+        tags:
+          [blockchain, handshake, bitcoin, open-source, protocol, RFC writing]
+      - text: 'Authored HIP2, which was adopted by multiple ecosystem projects including BobWallet.'
+        tags: [blockchain, handshake, open-source, RFC writing]
+      - text: 'Maintain hns.dev, an open-source resource hub for the Handshake ecosystem.'
+        tags: [blockchain, handshake, open-source]
+      - text: 'Improved the documentation deployment process by creating a CI/CD pipeline that automatically builds and deploys docs and HIPs on every update, ensuring the community always has access to the latest information.'
+        tags: [blockchain, handshake, open-source, ci-cd, github actions]
+      - text: 'Built an open-source page builder for link-in-bio style pages using Web Components.'
+        tags: [open-source, javascript, web-components]
+      - text: 'Built an open-source Handshake price tracker using Python with AI-assisted workflows and SQLite.'
+        tags: [blockchain, handshake, open-source, python, 'ai/vibe', sqlite]
+
+  - type: oss
+    name: Handshake
+    url: https://bobwallet.io/
+    role: Open Source Contributor
+    start: 2020
+    end: null
+    bullets:
+      - text: 'Contributed to BobWallet, a popular Handshake wallet and name management tool, implementing features such as emoji support for domain names and improving the user interface for name auctions.'
+        tags: [blockchain, handshake, open-source, react, javascript, i18n]
+
+  - type: personal
+    name: Personal Projects
+    role: Various
+    start: 2010
+    end: null
+    bullets:
+      - text: 'Built Anonymous Bot, a SaaS Slack bot developed with NestJS.'
+        tags:
+          [
+            saas,
+            slack,
+            nestjs,
+            node,
+            backend,
+            api,
+            integration,
+            Payments,
+            stripe,
+            sql,
+            prisma,
+            postgres,
+            redis,
+            github actions,
+            Webhooks,
+            Fine-tuning models,
+            AI agents,
+            Secrets Manager,
+            Grafana,
+            OpenTelemetry,
+            Datadog,
+            sentry,
+            TDD,
+            Unit testing,
+          ]
+      - text: 'Built this dynamic CV with ai/vibe workflows.'
+        tags:
+          [
+            ai/vibe,
+            github actions,
+            react,
+            typescript,
+            Fine-tuning models,
+            AI agents,
+          ]
+      - text: 'Completed training across multiple companies focused on OWASP Top 10, penetration testing, and GDPR compliance.'
+        tags: [OWASP Top 10, penetration testing, GDPR compliance, security]
+      - text: My personal go-to stack for frontend projects is React, TypeScript, and Tailwind CSS, which I use to build everything from small utilities to full-fledged applications.
+        tags:
+          [
+            react,
+            typescript,
+            tailwind,
+            vite,
+            TanStack Query,
+            prisma,
+            Database schema design,
+          ]
+      - text: "Created a bot to connect Amboss' MAGMA and automate the sale of liquidity channels on the Lightning Network."
+        tags:
+          [
+            blockchain,
+            lightning network,
+            open-source,
+            rust,
+            Rate limiting and throttling,
+            Webhooks,
+          ]
