@@ -11,23 +11,157 @@ categories:
   - label: Frontend & Web
     tags:
       [
-        react,
-        typescript,
-        nextjs,
-        micro-frontends,
-        module-federation,
-        migration,
         a-b-testing,
+        Accessibility,
+        angular,
+        backbone.js,
+        CSS Modules,
+        i18n,
+        javascript,
+        jquery,
+        micro-frontends,
+        migration,
+        module-federation,
+        next.js,
         performance,
+        react,
+        redux,
+        storybook,
+        tailwind,
+        TanStack Query,
+        typescript,
+        vercel,
+        vite,
+        web-components,
+        webpack,
       ]
   - label: Backend & API
-    tags: [node, graphql, java, api, backend, tdd]
-  - label: Infrastructure
-    tags: [aws, infrastructure, observability, cost-optimization]
+    tags:
+      [
+        api,
+        API versioning,
+        backend,
+        ddd,
+        express,
+        graphql,
+        integration,
+        java,
+        Microservices,
+        nestjs,
+        node,
+        Payments,
+        php,
+        python,
+        Rate limiting and throttling,
+        REST API design,
+        rust,
+        saas,
+        slack,
+        spring boot,
+        SSE,
+        stripe,
+        Webhooks,
+        zend,
+      ]
+  - label: Databases
+    tags:
+      [
+        Database schema design,
+        dynamodb,
+        mysql,
+        postgres,
+        prisma,
+        query-optimization,
+        redis,
+        sql,
+        sqlite,
+      ]
+  - label: Infrastructure & DevOps
+    tags:
+      [
+        Apache Kafka,
+        aws,
+        azure,
+        Blue/green deployments,
+        ci-cd,
+        Cost optimization (FinOps),
+        cost-optimization,
+        datadog,
+        EC2,
+        feature flags,
+        github actions,
+        grafana,
+        Helm,
+        IAM,
+        Incident management,
+        infrastructure,
+        Jenkins,
+        Kubernetes,
+        loki,
+        Monorepo,
+        Multi-tenancy,
+        nx,
+        observability,
+        on-call,
+        opentelemetry,
+        Prometheus,
+        RDS,
+        S3,
+        Secrets Manager,
+        sentry,
+        Snyk,
+        SQS / SNS,
+        Unleash,
+        Vulnerability scanning,
+      ]
+  - label: Testing & Quality
+    tags: [Cypress, end-to-end testing, Integration testing, tdd, Unit testing]
+  - label: Security
+    tags:
+      [
+        authentication,
+        GDPR compliance,
+        Identity & Access Management,
+        jwt,
+        OAuth2,
+        oidc,
+        OWASP Top 10,
+        penetration testing,
+        security,
+      ]
   - label: Leadership & Process
-    tags: [cto, leadership, mentoring, architecture, agile]
+    tags:
+      [
+        agile,
+        architecture,
+        cto,
+        kanban,
+        leadership,
+        mentoring,
+        RFC writing,
+        scrum,
+        Technical roadmap ownership,
+      ]
   - label: Blockchain & Web3
-    tags: [blockchain, handshake, bitcoin, open-source, protocol]
+    tags:
+      [
+        bitcoin,
+        blockchain,
+        DeFi protocols,
+        ERC-721,
+        Ethereum / EVM,
+        handshake,
+        Layer 2 solutions,
+        lightning network,
+        NFT standards,
+        open-source,
+        Optimism,
+        protocol,
+        Solidity / smart contract development,
+        Web3.js,
+      ]
+  - label: AI & Machine Learning
+    tags: [ai/vibe, AI agents, Fine-tuning models]
 
 skills:
   - label: Frontend
@@ -36,7 +170,7 @@ skills:
       [
         react,
         typescript,
-        nextjs,
+        next.js,
         css,
         micro-frontends,
         module-federation,
@@ -74,19 +208,24 @@ entries:
     end: 2026
     bullets:
       - text: 'Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.'
-        tags: [
-            cto,
-            leadership,
-            blockchain,
-            handshake,
+        tags:
+          [cto, leadership, Technical roadmap ownership, blockchain, handshake]
+      - text: 'Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.'
+        tags:
+          [
             typescript,
-            node,
             react,
             next.js,
             tailwind,
             storybook,
             TanStack Query,
             vercel,
+            node,
+            tdd,
+          ]
+      - text: 'Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.'
+        tags:
+          [
             Ethereum / EVM,
             Solidity / smart contract development,
             DeFi protocols,
@@ -94,53 +233,47 @@ entries:
             ERC-721,
             Layer 2 solutions,
             Optimism,
-            Web3.js
-            TDD,
-            Technical roadmap ownership,
+            Web3.js,
           ]
       - text: 'Led development of the main Namebase application, a Handshake marketplace and auction platform.'
-        tags: [
-            blockchain,
-            handshake,
+        tags:
+          [
             node,
-            postgres,
-            redis,
-            dynamodb,
             javascript,
             typescript,
             tailwind,
             TanStack Query,
-            Database schema design,
-            AWS,
+            REST API design,
+            API versioning,
+            SSE,
+            Rate limiting and throttling,
+            Payments,
+            jwt,
+            Unit testing,
+          ]
+      - text: 'Designed the platform data layer using PostgreSQL, Redis, and DynamoDB with careful schema design for performance at scale.'
+        tags: [postgres, redis, dynamodb, Database schema design, sql]
+      - text: 'Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management.'
+        tags:
+          [
+            aws,
             EC2,
             S3,
             RDS,
             IAM,
-            SQS / SNS
+            SQS / SNS,
             azure,
             Kubernetes,
             Helm,
             Unleash,
             feature flags,
-            API versioning,
-            Rate limiting and throttling
-            SSE,
-            REST API design,
-            jwt,
             Secrets Manager,
-            grafana,
-            opentelemetry,
-            sentry,
-            loki
-            Prometheus,
-            Unit testing,
-            Payments,
           ]
+      - text: 'Built full observability stack from scratch using Grafana, OpenTelemetry, Prometheus, Loki, and Sentry.'
+        tags: [grafana, opentelemetry, sentry, loki, Prometheus]
       - text: 'Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.'
         tags:
           [
-            blockchain,
-            handshake,
             oidc,
             authentication,
             security,
@@ -151,16 +284,7 @@ entries:
             OAuth2,
           ]
       - text: 'Coordinated engineers contributing to the Handshake open-source protocol repository, bridging platform requirements with core protocol development.'
-        tags:
-          [
-            blockchain,
-            handshake,
-            open-source,
-            leadership,
-            sql,
-            postgres,
-            express,
-          ]
+        tags: [leadership, sql, postgres, express]
       - text: 'Reduced AWS infrastructure costs by 40% through targeted architectural changes and resource rightsizing; built observability from scratch with unified metrics, dashboards, and alerting, cutting incident response times significantly.'
         tags:
           [
@@ -176,8 +300,6 @@ entries:
       - text: 'Implemented EPP (Extensible Provisioning Protocol) integrations, expanding platform compatibility with global domain registries and opening new partnership opportunities.'
         tags:
           [
-            blockchain,
-            handshake,
             api,
             architecture,
             java,
@@ -206,22 +328,21 @@ entries:
             architecture,
             tailwind,
             webpack,
-            Unleash,
-            feature flags,
             Monorepo,
             nx,
-            Apache Kafka,
-            REST API design,
-            jwt,
+          ]
+      - text: 'Configured Unleash feature flags, Apache Kafka event pipelines, and REST API integrations with JWT/OAuth2 authentication.'
+        tags:
+          [Unleash, feature flags, Apache Kafka, REST API design, jwt, OAuth2]
+      - text: 'Led security compliance efforts covering GDPR, Snyk vulnerability scanning, and on-call incident response via Datadog.'
+        tags:
+          [
             GDPR compliance,
             Vulnerability scanning,
             Snyk,
             Incident management,
             on-call,
             datadog,
-            OAuth2,
-            Cross-functional collaboration (product,
-            design),
           ]
       - text: "Contributed to the company's Federated GraphQL layer, standardizing data-access patterns and improving query performance."
         tags:
@@ -266,10 +387,8 @@ entries:
             backbone.js,
             i18n,
             Accessibility,
-            Agile,
-            Scrum,
-            Cross-functional collaboration (product,
-            design),
+            agile,
+            scrum,
           ]
       - text: 'Designed and ran a systematic A/B testing programme alongside product and design, increasing feature adoption rates by 20%.'
         tags: [a-b-testing, performance, react, i18n, Accessibility]
@@ -340,18 +459,18 @@ entries:
         tags:
           [blockchain, handshake, bitcoin, open-source, protocol, RFC writing]
       - text: 'Authored HIP2, which was adopted by multiple ecosystem projects including BobWallet.'
-        tags: [blockchain, handshake, open-source, RFC writing]
+        tags: [RFC writing]
       - text: 'Maintain hns.dev, an open-source resource hub for the Handshake ecosystem.'
-        tags: [blockchain, handshake, open-source]
+        tags: []
       - text: 'Improved the documentation deployment process by creating a CI/CD pipeline that automatically builds and deploys docs and HIPs on every update, ensuring the community always has access to the latest information.'
-        tags: [blockchain, handshake, open-source, ci-cd, github actions]
+        tags: [ci-cd, github actions]
       - text: 'Built an open-source page builder for link-in-bio style pages using Web Components.'
-        tags: [open-source, javascript, web-components]
+        tags: [javascript, web-components]
       - text: 'Built an open-source Handshake price tracker using Python with AI-assisted workflows and SQLite.'
-        tags: [blockchain, handshake, open-source, python, 'ai/vibe', sqlite]
+        tags: [python, ai/vibe, sqlite]
 
   - type: oss
-    name: Handshake
+    name: Bob Wallet
     url: https://bobwallet.io/
     role: Open Source Contributor
     start: 2020
@@ -361,12 +480,37 @@ entries:
         tags: [blockchain, handshake, open-source, react, javascript, i18n]
 
   - type: personal
-    name: Personal Projects
-    role: Various
-    start: 2010
+    name: sinpapeles.xyz
+    url: https://sinpapeles.xyz
+    role: Side Project
+    start: 2020
+    end: 2024
+    bullets:
+      - text: 'Built sinpapeles.xyz, a hosting service for Handshake domains with IPFS support.'
+        tags:
+          [
+            handshake,
+            blockchain,
+            react,
+            typescript,
+            vite,
+            express,
+            node,
+            postgres,
+            sql,
+            Unit testing,
+          ]
+      - text: 'Built a default parking page for unconfigured Handshake domains, served via Express with Handlebars templates and JWT-based auth.'
+        tags: [express, node, jwt, authentication]
+
+  - type: personal
+    name: Anonymous Bot
+    url: https://anonymousbot.com/
+    role: Side Project
+    start: 2019
     end: null
     bullets:
-      - text: 'Built Anonymous Bot, a SaaS Slack bot developed with NestJS.'
+      - text: 'Built Anonymous Bot, a SaaS Slack bot developed with NestJS, with a PostgreSQL/Prisma data layer and Redis caching.'
         tags:
           [
             saas,
@@ -376,24 +520,32 @@ entries:
             backend,
             api,
             integration,
-            Payments,
-            stripe,
             sql,
             prisma,
             postgres,
             redis,
-            github actions,
-            Webhooks,
+          ]
+      - text: 'Integrated Stripe payments, Slack Webhooks, and automated deployments via GitHub Actions with Secrets Manager.'
+        tags: [Payments, stripe, Webhooks, github actions, Secrets Manager]
+      - text: 'Added fine-tuned AI models and AI agent features; instrumented with Grafana, OpenTelemetry, Datadog, and Sentry; covered with TDD unit tests.'
+        tags:
+          [
             Fine-tuning models,
             AI agents,
-            Secrets Manager,
-            Grafana,
-            OpenTelemetry,
-            Datadog,
+            grafana,
+            opentelemetry,
+            datadog,
             sentry,
-            TDD,
+            tdd,
             Unit testing,
           ]
+
+  - type: personal
+    name: Personal Projects
+    role: Various
+    start: 2010
+    end: null
+    bullets:
       - text: 'Built this dynamic CV with ai/vibe workflows.'
         tags:
           [
@@ -422,7 +574,6 @@ entries:
           [
             blockchain,
             lightning network,
-            open-source,
             rust,
             Rate limiting and throttling,
             Webhooks,
