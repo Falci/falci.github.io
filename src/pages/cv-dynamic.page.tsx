@@ -2,6 +2,7 @@ import '../index.css';
 import { useState, useEffect } from 'react';
 import { load as parseYaml } from 'js-yaml';
 import rawData from '../data/cv.yaml?raw';
+import { downloadCVPdf } from './cv-dynamic-pdf';
 
 type Bullet = { text: string; tags: string[] };
 type Entry = {
@@ -54,6 +55,7 @@ export const Page = () => {
   const [mounted, setMounted] = useState(false);
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+  const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -188,6 +190,23 @@ export const Page = () => {
                 </button>
               </span>
             ))}
+          </div>
+        )}
+
+        {/* Download PDF */}
+        {filteredEntries.length > 0 && (
+          <div className="mt-6 flex justify-end print:hidden">
+            <button
+              onClick={async () => {
+                setDownloading(true);
+                await downloadCVPdf(selectedTags, filteredEntries, cvData.skills, formatTag);
+                setDownloading(false);
+              }}
+              disabled={downloading}
+              className="inline-flex items-center gap-2 text-sm px-4 py-2 rounded-xl bg-sky-600 text-white hover:bg-sky-700 disabled:opacity-60 transition-colors"
+            >
+              {downloading ? 'Generating...' : 'Download PDF'}
+            </button>
           </div>
         )}
 
