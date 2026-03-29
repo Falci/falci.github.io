@@ -10,6 +10,7 @@ type Entry = {
   name: string;
   url?: string;
   role: string;
+  description?: string;
   start: number;
   end: number | null;
   bullets: Bullet[];
@@ -43,6 +44,13 @@ const TAG_LABELS: Record<string, string> = {
   'tdd': 'TDD',
   'typescript': 'TypeScript',
 };
+
+const PERSONAS = [
+  { label: 'Frontend Engineer', tags: ['react', 'typescript', 'next.js', 'micro-frontends', 'module-federation', 'webpack', 'performance', 'a-b-testing'] },
+  { label: 'Full-Stack', tags: ['react', 'typescript', 'node', 'graphql', 'postgres', 'REST API design', 'tdd', 'aws'] },
+  { label: 'Tech Lead / CTO', tags: ['cto', 'leadership', 'mentoring', 'architecture', 'Technical roadmap ownership', 'agile'] },
+  { label: 'Backend Engineer', tags: ['node', 'nestjs', 'graphql', 'postgres', 'redis', 'api', 'tdd', 'REST API design'] },
+];
 
 const formatTag = (tag: string) =>
   TAG_LABELS[tag] ?? tag.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
@@ -122,11 +130,10 @@ export const Page = () => {
 
         {/* Prompt */}
         <p className="text-sm text-gray-600 leading-relaxed mb-1">
-          Rather than making you read through 15 years of experience, pick the topics
-          that matter to you and I will show only the relevant parts.
+          {cvData.profile.intro}
         </p>
         <p className="text-sm text-gray-400 mb-6">
-          Need a quick overview?{' '}
+          Pick the topics that matter to you and I will show only the relevant parts.{' '}
           <a href="/download/cv.pdf" className="underline hover:text-gray-600 transition-colors">
             There is also a one-page resume.
           </a>
@@ -172,6 +179,24 @@ export const Page = () => {
           )}
         </div>
 
+        {/* Persona presets */}
+        {selectedTags.length === 0 && !query && (
+          <div className="mt-4 print:hidden">
+            <p className="text-xs text-gray-400 mb-2">Or start with a role:</p>
+            <div className="flex flex-wrap gap-2">
+              {PERSONAS.map(p => (
+                <button
+                  key={p.label}
+                  onClick={() => setSelectedTags(p.tags.filter(t => allTags.includes(t)))}
+                  className="text-xs px-3 py-1.5 rounded-full border border-gray-200 text-gray-500 hover:border-sky-300 hover:text-sky-700 hover:bg-sky-50 transition-colors"
+                >
+                  {p.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Selected tag pills */}
         {selectedTags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-4 print:hidden">
@@ -199,7 +224,7 @@ export const Page = () => {
             <button
               onClick={async () => {
                 setDownloading(true);
-                await downloadCVPdf(selectedTags, filteredEntries, cvData.skills, formatTag);
+                await downloadCVPdf(selectedTags, filteredEntries, cvData.skills, formatTag, cvData.profile.intro);
                 setDownloading(false);
               }}
               disabled={downloading}
@@ -213,9 +238,12 @@ export const Page = () => {
         {/* Filtered CV content */}
         {filteredEntries.length > 0 && (
           <div className="mt-10 flex flex-col gap-8">
+            <p className="text-xs text-gray-400 -mb-4">
+              {filteredEntries.length} {filteredEntries.length === 1 ? 'entry' : 'entries'} matched
+            </p>
             {filteredEntries.map(entry => (
               <div key={entry.name}>
-                <div className="flex justify-between items-start mb-2">
+                <div className="flex justify-between items-start mb-1">
                   <div>
                     <div className="font-semibold text-gray-900">
                       {entry.url ? (
@@ -230,6 +258,9 @@ export const Page = () => {
                     {formatPeriod(entry.start, entry.end)}
                   </div>
                 </div>
+                {entry.description && (
+                  <p className="text-xs text-gray-400 italic mb-2">{entry.description}</p>
+                )}
                 <ul className="flex flex-col gap-2 pl-4 border-l-2 border-gray-100">
                   {entry.bullets.map((b, i) => (
                     <li key={i} className="text-sm text-gray-600 leading-relaxed">

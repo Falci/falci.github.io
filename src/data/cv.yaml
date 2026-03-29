@@ -122,7 +122,7 @@ categories:
         authentication,
         GDPR compliance,
         Identity & Access Management,
-        jwt,
+        JWT,
         OAuth2,
         oidc,
         OWASP Top 10,
@@ -204,8 +204,9 @@ entries:
     name: Namebase.io
     url: https://www.namebase.io
     role: 'Sr. Software Engineer / CTO'
+    description: 'Web3 Handshake domain marketplace and registry platform.'
     start: 2022
-    end: 2026
+    end: null
     bullets:
       - text: 'Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.'
         tags:
@@ -248,7 +249,7 @@ entries:
             SSE,
             Rate limiting and throttling,
             Payments,
-            jwt,
+            JWT,
             Unit testing,
           ]
       - text: 'Designed the platform data layer using PostgreSQL, Redis, and DynamoDB with careful schema design for performance at scale.'
@@ -273,16 +274,7 @@ entries:
         tags: [grafana, opentelemetry, sentry, loki, Prometheus]
       - text: 'Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.'
         tags:
-          [
-            oidc,
-            authentication,
-            security,
-            node,
-            typescript,
-            api,
-            jwt,
-            OAuth2,
-          ]
+          [oidc, authentication, security, node, typescript, api, JWT, OAuth2]
       - text: 'Coordinated engineers contributing to the Handshake open-source protocol repository, bridging platform requirements with core protocol development.'
         tags: [leadership, sql, postgres, express]
       - text: 'Reduced AWS infrastructure costs by 40% through targeted architectural changes and resource rightsizing; built observability from scratch with unified metrics, dashboards, and alerting, cutting incident response times significantly.'
@@ -315,6 +307,7 @@ entries:
   - type: company
     name: Adevinta
     role: 'Sr. Software Engineer'
+    description: "Europe's largest digital classifieds group, operating Milanuncios, fotocasa, Vibbo, and 30+ marketplaces."
     start: 2020
     end: 2023
     bullets:
@@ -333,7 +326,7 @@ entries:
           ]
       - text: 'Configured Unleash feature flags, Apache Kafka event pipelines, and REST API integrations with JWT/OAuth2 authentication.'
         tags:
-          [Unleash, feature flags, Apache Kafka, REST API design, jwt, OAuth2]
+          [Unleash, feature flags, Apache Kafka, REST API design, JWT, OAuth2]
       - text: 'Led security compliance efforts covering GDPR, Snyk vulnerability scanning, and on-call incident response via Datadog.'
         tags:
           [
@@ -373,6 +366,7 @@ entries:
   - type: company
     name: eDreams Odigeo
     role: 'Sr. Software Engineer'
+    description: "Europe's leading online travel agency, operating eDreams, Opodo, and GoVoyages across 44 markets."
     start: 2017
     end: 2020
     bullets:
@@ -392,10 +386,13 @@ entries:
           ]
       - text: 'Designed and ran a systematic A/B testing programme alongside product and design, increasing feature adoption rates by 20%.'
         tags: [a-b-testing, performance, react, i18n, Accessibility]
+      - text: 'Worked within a large distributed frontend team following Agile/Scrum, mentoring junior developers and driving code quality standards across the booking flow with TypeScript, CSS Modules, and webpack.'
+        tags: [leadership, mentoring, agile, scrum, typescript, CSS Modules, webpack, tdd, Unit testing]
 
   - type: company
     name: Mobile-DI
     role: 'Development Analyst'
+    description: 'Software consultancy delivering enterprise Angular applications for B2B clients.'
     start: 2015
     end: 2018
     bullets:
@@ -419,6 +416,7 @@ entries:
     name: Matera Systems
     role: 'Software Engineer'
     url: https://matera.com.br/
+    description: 'Brazilian fintech delivering platform solutions for financial institutions and payment processors.'
     start: 2014
     end: 2017
     bullets:
@@ -430,6 +428,7 @@ entries:
     name: IADTEC
     role: 'Junior Software Engineer'
     url: https://iadtec.com.br/
+    description: 'IT consulting firm serving retail and grocery sector clients.'
     start: 2013
     end: 2014
     bullets:
@@ -440,6 +439,7 @@ entries:
     name: Elotech
     role: 'Junior Software Engineer'
     url: https://www.elotech.com.br/
+    description: 'Brazilian software company serving the public sector with management and e-gov systems.'
     start: 2011
     end: 2012
     bullets:
@@ -452,6 +452,7 @@ entries:
     name: Handshake
     url: https://hns.dev/HIPs/
     role: Open Source Contributor
+    description: 'Decentralized, permissionless naming protocol and blockchain — an alternative root DNS.'
     start: 2020
     end: null
     bullets:
@@ -461,7 +462,7 @@ entries:
       - text: 'Authored HIP2, which was adopted by multiple ecosystem projects including BobWallet.'
         tags: [RFC writing]
       - text: 'Maintain hns.dev, an open-source resource hub for the Handshake ecosystem.'
-        tags: []
+        tags: [open-source, handshake, javascript, ci-cd]
       - text: 'Improved the documentation deployment process by creating a CI/CD pipeline that automatically builds and deploys docs and HIPs on every update, ensuring the community always has access to the latest information.'
         tags: [ci-cd, github actions]
       - text: 'Built an open-source page builder for link-in-bio style pages using Web Components.'
@@ -473,16 +474,18 @@ entries:
     name: Bob Wallet
     url: https://bobwallet.io/
     role: Open Source Contributor
+    description: 'Leading open-source Handshake wallet and name management tool.'
     start: 2020
     end: null
     bullets:
       - text: 'Contributed to BobWallet, a popular Handshake wallet and name management tool, implementing features such as emoji support for domain names and improving the user interface for name auctions.'
         tags: [blockchain, handshake, open-source, react, javascript, i18n]
 
-  - type: personal
+  - type: project
     name: sinpapeles.xyz
     url: https://sinpapeles.xyz
     role: Side Project
+    description: 'Hosting service for Handshake domains with IPFS support.'
     start: 2020
     end: 2024
     bullets:
@@ -501,12 +504,13 @@ entries:
             Unit testing,
           ]
       - text: 'Built a default parking page for unconfigured Handshake domains, served via Express with Handlebars templates and JWT-based auth.'
-        tags: [express, node, jwt, authentication]
+        tags: [express, node, JWT, authentication]
 
-  - type: personal
+  - type: project
     name: Anonymous Bot
     url: https://anonymousbot.com/
     role: Side Project
+    description: 'SaaS Slack bot for anonymous team messaging, with AI features and Stripe billing.'
     start: 2019
     end: null
     bullets:
@@ -540,7 +544,7 @@ entries:
             Unit testing,
           ]
 
-  - type: personal
+  - type: project
     name: Personal Projects
     role: Various
     start: 2010

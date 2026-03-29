@@ -9,7 +9,6 @@ import {
   pdf,
 } from '@react-pdf/renderer';
 
-
 // Navy palette matching the existing CV
 const navy = '#0f2644';
 const navyLight = '#1a3a60';
@@ -28,9 +27,16 @@ const s = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: white,
   },
-  sidebar: {
+  sidebarBg: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    bottom: 0,
     width: 185,
     backgroundColor: navy,
+  },
+  sidebar: {
+    width: 185,
     padding: 24,
     flexDirection: 'column',
     flexShrink: 0,
@@ -57,7 +63,7 @@ const s = StyleSheet.create({
     width: 80,
     height: 80,
     objectFit: 'cover',
-    objectPositionY: '15%',
+    objectPosition: '50% 35%',
   },
   name: {
     color: white,
@@ -126,7 +132,9 @@ const s = StyleSheet.create({
   main: {
     flex: 1,
     backgroundColor: gray50,
-    padding: 28,
+    paddingTop: 28,
+    paddingBottom: 28,
+    paddingHorizontal: 28,
     flexDirection: 'column',
   },
   mainHeader: {
@@ -166,7 +174,10 @@ const s = StyleSheet.create({
     marginBottom: 10,
   },
   entry: {
-    marginBottom: 14,
+    marginTop: 14,
+  },
+  entryFirst: {
+    marginTop: 0,
   },
   entryHeader: {
     flexDirection: 'row',
@@ -236,27 +247,33 @@ type Props = {
   entries: Entry[];
   skills: SkillGroup[];
   formatTag: (tag: string) => string;
+  profileIntro: string;
 };
 
 const formatPeriod = (start: number, end: number | null) =>
   `${start} \u2013 ${end ?? 'Present'}`;
 
-const CVDocument = ({ selectedTags, entries, skills, formatTag }: Props) => {
+const CVDocument = ({
+  selectedTags,
+  entries,
+  skills,
+  formatTag,
+  profileIntro,
+}: Props) => {
   const relevantSkills = skills
-    .map(g => ({
+    .map((g) => ({
       ...g,
-      items: g.items.filter(item =>
-        selectedTags.some(t =>
-          item.toLowerCase() === t.toLowerCase() ||
-          item.toLowerCase().includes(t.toLowerCase())
-        )
+      items: g.items.filter((item) =>
+        selectedTags.some((t) => item.toLowerCase() === t.toLowerCase())
       ),
     }))
-    .filter(g => g.items.length > 0);
+    .filter((g) => g.items.length > 0);
 
   return (
     <Document title="Fernando Falci - CV" author="Fernando Falci">
       <Page size="A4" style={s.page}>
+        {/* Fixed navy background for sidebar — repeats on every page */}
+        <View fixed style={s.sidebarBg} />
 
         {/* Sidebar */}
         <View style={s.sidebar}>
@@ -272,65 +289,64 @@ const CVDocument = ({ selectedTags, entries, skills, formatTag }: Props) => {
           <View style={s.sidebarSection}>
             <Text style={s.sidebarSectionTitle}>Contact</Text>
             <View style={s.contactRow}>
-              <Link src="https://falci.me" style={s.contactLink}>falci.me</Link>
+              <Link src="https://falci.me" style={s.contactLink}>
+                falci.me
+              </Link>
             </View>
             <View style={s.contactRow}>
-              <Link src="https://linkedin.com/in/falci" style={s.contactLink}>linkedin.com/in/falci</Link>
+              <Link src="https://linkedin.com/in/falci" style={s.contactLink}>
+                linkedin.com/in/falci
+              </Link>
             </View>
             <View style={s.contactRow}>
-              <Link src="https://github.com/Falci" style={s.contactLink}>github.com/Falci</Link>
+              <Link src="https://github.com/Falci" style={s.contactLink}>
+                github.com/Falci
+              </Link>
             </View>
           </View>
 
           <View style={s.sidebarSection}>
             <Text style={s.sidebarSectionTitle}>Focus areas</Text>
             <View style={s.tagsRow}>
-              {selectedTags.map(tag => (
-                <Text key={tag} style={s.tagPill}>{formatTag(tag)}</Text>
+              {selectedTags.map((tag) => (
+                <Text key={tag} style={s.tagPill}>
+                  {formatTag(tag)}
+                </Text>
               ))}
             </View>
           </View>
 
-          {relevantSkills.length > 0 && (
-            <View style={s.sidebarSection}>
-              <Text style={s.sidebarSectionTitle}>Skills</Text>
-              {relevantSkills.map(g => (
-                <View key={g.label} style={{ marginBottom: 8 }}>
-                  <Text style={{ color: '#94a3b8', fontSize: 7, marginBottom: 4, textTransform: 'uppercase', letterSpacing: 0.5 }}>
-                    {g.label}
-                  </Text>
-                  <View style={s.tagsRow}>
-                    {g.items.map(item => (
-                      <Text key={item} style={s.tagPill}>{item}</Text>
-                    ))}
-                  </View>
-                </View>
-              ))}
-            </View>
-          )}
+          {/* QR code */}
+          <View style={{ marginTop: 16, alignItems: 'center' }}>
+            <Text style={s.sidebarSectionTitle}>View online</Text>
+            <Image
+              src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(`https://falci.me/cv-dynamic?tags=${selectedTags.join(',')}`)}&size=220x220&margin=0&color=38bdf8&bgcolor=0f2644`}
+              style={{ width: 100, height: 100, marginTop: 6 }}
+            />
+          </View>
         </View>
 
         {/* Main content */}
         <View style={s.main}>
           <View style={s.mainHeader}>
             <Text style={s.mainName}>Fernando Falci</Text>
-            <Text style={s.mainTitle}>Full-Stack Engineer · 15+ years experience</Text>
-            <Text style={s.intro}>
-              Full-stack software engineer specializing in React frontends, Node.js backends, and technical leadership.
-              This CV was filtered to highlight experience relevant to: {selectedTags.map(t => formatTag(t)).join(', ')}.
+            <Text style={s.mainTitle}>
+              Full-Stack Engineer · 15+ years experience
             </Text>
           </View>
 
           <Text style={s.sectionTitle}>Experience</Text>
 
-          {entries.map(entry => (
-            <View key={entry.name} style={s.entry}>
+          {entries.map((entry, i) => (
+            <View key={entry.name} style={i === 0 ? [s.entry, s.entryFirst] : s.entry} wrap={false}>
               <View style={s.entryHeader}>
                 <View>
                   <Text style={s.entryName}>{entry.name}</Text>
                   <Text style={s.entryRole}>{entry.role}</Text>
                 </View>
-                <Text style={s.entryPeriod}>{formatPeriod(entry.start, entry.end)}</Text>
+                <Text style={s.entryPeriod}>
+                  {formatPeriod(entry.start, entry.end)}
+                </Text>
               </View>
               {entry.bullets.map((b, i) => (
                 <View key={i} style={s.bullet}>
@@ -342,11 +358,9 @@ const CVDocument = ({ selectedTags, entries, skills, formatTag }: Props) => {
           ))}
 
           <View style={s.footer}>
-            <Text style={s.footerText}>falci.me/cv-dynamic?tags={selectedTags.join(',')}</Text>
-            <Text style={s.footerText}>Generated {new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}</Text>
+            <Text style={s.footerText}>falci.me/cv-dynamic</Text>
           </View>
         </View>
-
       </Page>
     </Document>
   );
@@ -357,6 +371,7 @@ export const downloadCVPdf = async (
   entries: Entry[],
   skills: SkillGroup[],
   formatTag: (tag: string) => string,
+  profileIntro: string
 ) => {
   const blob = await pdf(
     <CVDocument
@@ -364,6 +379,7 @@ export const downloadCVPdf = async (
       entries={entries}
       skills={skills}
       formatTag={formatTag}
+      profileIntro={profileIntro}
     />
   ).toBlob();
 
