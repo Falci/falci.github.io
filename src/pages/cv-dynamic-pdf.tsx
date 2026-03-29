@@ -216,6 +216,10 @@ const s = StyleSheet.create({
     lineHeight: 1.45,
     flex: 1,
   },
+  inlineTag: {
+    color: skyDark,
+    fontSize: 6.5,
+  },
   footer: {
     marginTop: 'auto',
     paddingTop: 8,
@@ -351,7 +355,12 @@ const CVDocument = ({
               {entry.bullets.map((b, i) => (
                 <View key={i} style={s.bullet}>
                   <Text style={s.bulletDot}>•</Text>
-                  <Text style={s.bulletText}>{b.text}</Text>
+                  <Text style={s.bulletText}>
+                    {b.text}
+                    {b.tags.filter(t => selectedTags.includes(t)).map((tag, i) => (
+                      <Text key={tag} style={s.inlineTag}>{i === 0 ? '  |  ' : ',  '}{formatTag(tag)}</Text>
+                    ))}
+                  </Text>
                 </View>
               ))}
             </View>
