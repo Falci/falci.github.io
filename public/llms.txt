@@ -1,0 +1,25 @@
+# Fernando Falci
+
+> Full Stack Engineer with 15+ years of experience. React, Node.js, TypeScript, GraphQL, technical leadership. Former CTO at Namebase.io (Handshake ecosystem). Based in Barcelona, Spain.
+
+## Pages
+
+- [Home](https://falci.me/): Personal profile and contact links
+- [CV](https://falci.me/cv): Full curriculum vitae with work experience, skills, education, and references
+
+## Key Facts
+
+- **Current role**: CTO at Namebase.io (2022-2026)
+- **Location**: Barcelona, Spain
+- **Email**: fernando@falci.me
+- **LinkedIn**: https://linkedin.com/in/falci
+- **GitHub**: https://github.com/Falci
+- **Skills**: React, TypeScript, Next.js, Node.js, GraphQL, Java, AWS, Module Federation, Handshake/Web3
+- **Languages**: Portuguese (native), English (fluent), Spanish (advanced)
+
+## Work History
+
+- **Namebase.io** - Sr. Software Engineer / CTO (2022-2026)
+- **Adevinta** - Sr. Software Engineer (Feb 2020-Feb 2023)
+- **eDreams Odigeo** - Sr. Software Engineer (Jun 2017-Feb 2020)
+- **Mobile-DI** - Development Analyst (2015-Mar 2018)

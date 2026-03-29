@@ -1,6 +1,20 @@
 import '../index.css';
 import { FaEnvelope, FaGithub, FaLink, FaLinkedin, FaMapPin, FaPhone } from 'react-icons/fa';
 
+export const documentProps = {
+  title: 'Fernando Falci - CV',
+  description:
+    'CV of Fernando Falci, Full Stack Engineer with 15+ years of experience. React, Node.js, TypeScript, GraphQL, AWS.',
+  canonicalUrl: 'https://falci.me/cv',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    url: 'https://falci.me/cv',
+    name: 'Fernando Falci - CV',
+    about: { '@id': 'https://falci.me/#person' },
+  },
+};
+
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <div className="border-b border-sky-700 uppercase font-semibold tracking-wider text-xs mb-3 print:mb-1 pb-1">
     {children}

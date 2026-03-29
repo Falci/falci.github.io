@@ -8,16 +8,19 @@ export type IconType = ({
   className: string;
 }) => React.ReactElement;
 
+type DocumentProps = {
+  title: string;
+  description?: string;
+  canonicalUrl?: string;
+  jsonLd?: object;
+};
+
 export type PageContext = {
   Page: React.ReactNode;
   exports: {
-    documentProps?: {
-      title: string;
-    };
+    documentProps?: DocumentProps;
   };
   urlPathname: string;
   pageProps: Record<string, unknown>;
-  documentProps?: {
-    title: string;
-  };
+  documentProps?: DocumentProps;
 };
