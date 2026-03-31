@@ -326,7 +326,7 @@ const CVDocument = ({
           </View>
           <Text style={s.name}>Fernando Falci</Text>
           <Text style={s.title}>Software Engineer</Text>
-          <Text style={s.location}>Costa Rica</Text>
+          <Text style={s.location}>EMEA</Text>
 
           <View style={s.sidebarSection}>
             <Text style={s.sidebarSectionTitle}>Contact</Text>
@@ -348,7 +348,7 @@ const CVDocument = ({
             </View>
             <View style={s.contactRow}>
               <SidebarIcon icon="mapPin" />
-              <Text style={s.contactText}>Costa Rica</Text>
+              <Text style={s.contactText}>EMEA</Text>
             </View>
             <View style={s.contactRow}>
               <SidebarIcon icon="linkedin" />
