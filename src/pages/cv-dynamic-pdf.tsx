@@ -326,7 +326,7 @@ const CVDocument = ({
           </View>
           <Text style={s.name}>Fernando Falci</Text>
           <Text style={s.title}>Software Engineer</Text>
-          <Text style={s.location}>EMEA</Text>
+          <Text style={s.location}>Western Europe</Text>
 
           <View style={s.sidebarSection}>
             <Text style={s.sidebarSectionTitle}>Contact</Text>
@@ -348,7 +348,7 @@ const CVDocument = ({
             </View>
             <View style={s.contactRow}>
               <SidebarIcon icon="mapPin" />
-              <Text style={s.contactText}>EMEA</Text>
+              <Text style={s.contactText}>Western Europe</Text>
             </View>
             <View style={s.contactRow}>
               <SidebarIcon icon="linkedin" />
@@ -500,7 +500,7 @@ export const downloadCVPdf = async (
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `Fernando_Falci_CV_${selectedTags.slice(0, 3).join('-')}.pdf`;
+  a.download = `Fernando_Falci_CV.pdf`;
   a.click();
   URL.revokeObjectURL(url);
 };

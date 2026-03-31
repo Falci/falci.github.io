@@ -50,7 +50,7 @@ categories:
         nestjs,
         node,
         Payments,
-        php,
+        PHP,
         python,
         Rate limiting and throttling,
         REST API design,
@@ -83,7 +83,7 @@ categories:
         aws,
         azure,
         Blue/green deployments,
-        ci-cd,
+        CI/CD,
         Cost optimization (FinOps),
         cost-optimization,
         datadog,
@@ -139,6 +139,7 @@ categories:
         kanban,
         leadership,
         mentoring,
+        product,
         RFC writing,
         scrum,
         Technical roadmap ownership,
@@ -162,7 +163,7 @@ categories:
         Web3.js,
       ]
   - label: AI & Machine Learning
-    tags: [ai/vibe, AI agents, Fine-tuning models]
+    tags: [AI/Vibe, AI agents, Fine-tuning models]
 
 skills:
   - label: Frontend
@@ -211,7 +212,14 @@ entries:
     bullets:
       - text: 'Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.'
         tags:
-          [cto, leadership, Technical roadmap ownership, blockchain, handshake]
+          [
+            cto,
+            leadership,
+            Technical roadmap ownership,
+            blockchain,
+            handshake,
+            product,
+          ]
       - text: 'Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.'
         tags:
           [
@@ -222,7 +230,6 @@ entries:
             storybook,
             TanStack Query,
             vercel,
-            node,
             tdd,
           ]
       - text: 'Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.'
@@ -241,9 +248,6 @@ entries:
         tags:
           [
             node,
-            javascript,
-            typescript,
-            tailwind,
             TanStack Query,
             REST API design,
             API versioning,
@@ -275,10 +279,9 @@ entries:
       - text: 'Built full observability stack from scratch using Grafana, OpenTelemetry, Prometheus, Loki, and Sentry.'
         tags: [grafana, opentelemetry, sentry, loki, Prometheus]
       - text: 'Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.'
-        tags:
-          [oidc, authentication, security, node, typescript, api, JWT, OAuth2]
+        tags: [oidc, authentication, security, api, JWT, OAuth2]
       - text: 'Coordinated engineers contributing to the Handshake open-source protocol repository, bridging platform requirements with core protocol development.'
-        tags: [leadership, postgres, express]
+        tags: [open-source, postgres, express]
       - text: 'Reduced AWS infrastructure costs by 40% through targeted architectural changes and resource rightsizing; built observability from scratch with unified metrics, dashboards, and alerting, cutting incident response times significantly.'
         tags:
           [
@@ -297,7 +300,6 @@ entries:
             architecture,
             java,
             spring boot,
-            SQL,
             MySQL,
             grafana,
             opentelemetry,
@@ -320,7 +322,6 @@ entries:
             typescript,
             react,
             architecture,
-            tailwind,
             webpack,
             Monorepo,
             nx,
@@ -355,7 +356,6 @@ entries:
             tdd,
             agile,
             kanban,
-            leadership,
             mentoring,
             storybook,
             Unit testing,
@@ -386,7 +386,7 @@ entries:
             scrum,
           ]
       - text: 'Designed and ran a systematic A/B testing programme alongside product and design, increasing feature adoption rates by 20%.'
-        tags: [a-b-testing, performance, react, i18n, Accessibility]
+        tags: [a-b-testing, performance, i18n, Accessibility, product]
       - text: 'Worked within a large distributed frontend team following Agile/Scrum, mentoring junior developers and driving code quality standards across the booking flow with TypeScript, CSS Modules, and webpack.'
         tags:
           [
@@ -422,7 +422,7 @@ entries:
             Multi-tenancy,
           ]
       - text: 'Served as primary technical contact for stakeholders, translating business requirements into engineering plans and delivery timelines.'
-        tags: [leadership, cto, agile, scrum, postgres, Jenkins]
+        tags: [cto, agile, scrum, postgres, Jenkins]
 
   - type: company
     name: Matera Systems
@@ -456,9 +456,7 @@ entries:
     end: 2012
     bullets:
       - text: 'Contributed to the development of a platform for the healthcare industry, working primarily with jQuery and PHP to build interactive features and backend services.'
-        tags: [jquery, php, zend]
-      - text: 'Visited client sites to perform on-site deployments and support go-live activities.'
-        tags: [jquery, php, zend]
+        tags: [jquery, PHP, zend]
 
   - type: oss
     name: Handshake
@@ -474,13 +472,13 @@ entries:
       - text: 'Authored HIP2, which was adopted by multiple ecosystem projects including BobWallet.'
         tags: [RFC writing]
       - text: 'Maintain hns.dev, an open-source resource hub for the Handshake ecosystem.'
-        tags: [open-source, handshake, javascript, ci-cd]
+        tags: [open-source, handshake, javascript, CI/CD]
       - text: 'Improved the documentation deployment process by creating a CI/CD pipeline that automatically builds and deploys docs and HIPs on every update, ensuring the community always has access to the latest information.'
-        tags: [ci-cd, github actions]
+        tags: [CI/CD, github actions]
       - text: 'Built an open-source page builder for link-in-bio style pages using Web Components.'
         tags: [javascript, web-components]
       - text: 'Built an open-source Handshake price tracker using Python with AI-assisted workflows and SQLite.'
-        tags: [python, ai/vibe, SQLite]
+        tags: [python, AI/Vibe, SQLite]
 
   - type: oss
     name: Bob Wallet
@@ -491,7 +489,7 @@ entries:
     end: null
     bullets:
       - text: 'Contributed to BobWallet, a popular Handshake wallet and name management tool, implementing features such as emoji support for domain names and improving the user interface for name auctions.'
-        tags: [blockchain, handshake, open-source, react, javascript, i18n]
+        tags: [blockchain, handshake, open-source, react, i18n]
 
   - type: project
     name: sinpapeles.xyz
@@ -507,7 +505,6 @@ entries:
             handshake,
             blockchain,
             react,
-            typescript,
             vite,
             express,
             node,
@@ -562,29 +559,14 @@ entries:
     start: 2010
     end: null
     bullets:
-      - text: 'Built this dynamic CV with ai/vibe workflows.'
-        tags:
-          [
-            ai/vibe,
-            github actions,
-            react,
-            typescript,
-            Fine-tuning models,
-            AI agents,
-          ]
+      - text: 'Built this dynamic CV with AI/Vibe workflows.'
+        tags: [AI/Vibe, github actions, react, Fine-tuning models, AI agents]
       - text: 'Completed training across multiple companies focused on OWASP Top 10, penetration testing, and GDPR compliance.'
         tags: [OWASP Top 10, penetration testing, GDPR compliance, security]
-      - text: My personal go-to stack for frontend projects is React, TypeScript, and Tailwind CSS, which I use to build everything from small utilities to full-fledged applications.
-        tags:
-          [
-            react,
-            typescript,
-            tailwind,
-            vite,
-            TanStack Query,
-            prisma,
-            Database schema design,
-          ]
+      - text: My personal go-to frontend stack is React, TypeScript, and Tailwind CSS, bundled with Vite and powered by TanStack Query for data fetching.
+        tags: [react, typescript, tailwind, vite, TanStack Query]
+      - text: For the data layer I reach for Prisma with careful schema design, and containerize everything with Docker.
+        tags: [prisma, Database schema design, Docker]
       - text: "Created a bot to connect Amboss' MAGMA and automate the sale of liquidity channels on the Lightning Network."
         tags:
           [
