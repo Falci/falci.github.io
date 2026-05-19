@@ -445,7 +445,7 @@ entries:
     end: 2014
     bullets:
       - text: 'Developed Java-based web applications for clients in the grocery and retail sectors, implementing RESTful APIs and custom UI components.'
-        tags: [java, api, backend, angular]
+        tags: [java, backend, angular]
 
   - type: company
     name: Elotech
@@ -489,7 +489,7 @@ entries:
     end: null
     bullets:
       - text: 'Contributed to BobWallet, a popular Handshake wallet and name management tool, implementing features such as emoji support for domain names and improving the user interface for name auctions.'
-        tags: [blockchain, handshake, open-source, react, i18n]
+        tags: [blockchain, handshake, open-source, i18n]
 
   - type: project
     name: sinpapeles.xyz
@@ -504,7 +504,6 @@ entries:
           [
             handshake,
             blockchain,
-            react,
             vite,
             express,
             node,
@@ -560,7 +559,7 @@ entries:
     end: null
     bullets:
       - text: 'Built this dynamic CV with AI/Vibe workflows.'
-        tags: [AI/Vibe, github actions, react, Fine-tuning models, AI agents]
+        tags: [AI/Vibe, github actions, Fine-tuning models, AI agents]
       - text: 'Completed training across multiple companies focused on OWASP Top 10, penetration testing, and GDPR compliance.'
         tags: [OWASP Top 10, penetration testing, GDPR compliance, security]
       - text: My personal go-to frontend stack is React, TypeScript, and Tailwind CSS, bundled with Vite and powered by TanStack Query for data fetching.

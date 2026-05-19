@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Document,
   Page,
@@ -290,17 +291,19 @@ type Props = {
   skills: SkillGroup[];
   formatTag: (tag: string) => string;
   profileIntro: string;
+  photoSrc?: string;
 };
 
 const formatPeriod = (start: number, end: number | null) =>
   `${start} \u2013 ${end ?? 'Present'}`;
 
-const CVDocument = ({
+export const CVDocument = ({
   selectedTags,
   entries,
   skills,
   formatTag,
   profileIntro,
+  photoSrc = '/images/me.jpeg',
 }: Props) => {
   const relevantSkills = skills
     .map((g) => ({
@@ -321,7 +324,7 @@ const CVDocument = ({
         <View style={s.sidebar}>
           <View style={s.photoRing}>
             <View style={s.photoClip}>
-              <Image src="/images/me.jpeg" style={s.photo} />
+              <Image src={photoSrc} style={s.photo} />
             </View>
           </View>
           <Text style={s.name}>Fernando Falci</Text>
