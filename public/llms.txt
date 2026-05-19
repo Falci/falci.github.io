@@ -6,6 +6,7 @@
 
 - [Home](https://falci.me/): Personal profile and contact links
 - [CV](https://falci.me/cv): Full curriculum vitae with work experience, skills, education, and references
+- [CV (Markdown)](https://falci.me/download/cv.md): Plain-text CV optimized for AI parsers
 
 ## Key Facts
 
