@@ -2,10 +2,12 @@ profile:
   name: Fernando Falci
   title: Software Engineer
   intro: >
-    Full-stack software engineer with 15+ years of professional experience across startups
-    and enterprise environments, specializing in React frontends, Node.js backends, and
-    technical leadership. Hands-on by nature and equally comfortable setting technical
-    direction, running hiring processes, and presenting to stakeholders.
+    Full-stack software engineer with 15+ years of experience driving technical strategy
+    and delivering complex systems across startups and large-scale enterprises. Track record
+    of leading org-wide architecture initiatives, establishing engineering standards adopted
+    across multiple teams, and turning ambiguous business problems into scalable technical
+    solutions. Equally comfortable writing code, mentoring engineers, and aligning technical
+    direction with business goals.
 
 categories:
   - label: Frontend & Web
