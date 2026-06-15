@@ -1,12 +1,12 @@
 # Fernando Falci
 
-**Software Engineer**
+**Staff Software Engineer**
 Western Europe | +1 (302) 687 3667 | fernando@falci.me | falci.me
 linkedin.com/in/fernandofalci | github.com/Falci
 
 ---
 
-Full-stack software engineer with 15+ years of professional experience across startups and enterprise environments, specializing in React frontends, Node.js backends, and technical leadership. Hands-on by nature and equally comfortable setting technical direction, running hiring processes, and presenting to stakeholders.
+Staff-level full-stack engineer with 15+ years of experience driving technical strategy and delivering complex systems across startups and large-scale enterprises. Track record of leading org-wide architecture initiatives, establishing engineering standards adopted across multiple teams, and turning ambiguous business problems into scalable technical solutions. Operates as a force multiplier: setting technical direction, authoring RFCs, and mentoring engineers while staying deeply hands-on in code, infrastructure, and system design.
 
 ---
 
@@ -16,10 +16,13 @@ Full-stack software engineer with 15+ years of professional experience across st
 2022 - Present | Web3 Handshake domain marketplace and registry platform.
 
 - Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.
+- Acted as the technical reference for the engineering org, owning architecture reviews and system-design decisions, setting coding and quality standards, and unblocking the team on the hardest protocol-level and scalability problems.
+- Grew, guided, and mentored the engineering team across hiring, onboarding, and recurring 1:1s, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.
+- Translated ambiguous business goals into actionable technical plans, aligning smart contract, backend, and frontend workstreams behind a shared architecture and delivery cadence.
 - Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.
 - Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.
 - Led development of the main Namebase application, a Handshake marketplace and auction platform.
-- Designed the platform data layer using PostgreSQL, Redis, and DynamoDB with careful schema design for performance at scale.
+- Designed the platform data layer using PostgreSQL, Redis, GoLang, Kafka, and DynamoDB with careful schema design for performance at scale.
 - Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management.
 - Built full observability stack from scratch using Grafana, OpenTelemetry, Prometheus, Loki, and Sentry.
 - Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.
@@ -30,7 +33,8 @@ Full-stack software engineer with 15+ years of professional experience across st
 ### Adevinta | Sr. Software Engineer
 2020 - 2023 | Europe's largest digital classifieds group, operating Milanuncios, fotocasa, Vibbo, and 30+ marketplaces.
 
-- Architected a Module Federation-based refactor of the internal backoffice, enabling 4+ teams to deploy independently and cutting deployment conflicts by 45%.
+- Technical reference for DataHub, a multi-team internal frontend platform: architected its migration to Webpack Module Federation (micro-frontends), defining the shared architecture and integration contracts that let 4+ teams build and deploy independently and cut deployment conflicts by 45%.
+- Guided multiple product teams in adopting the micro-frontend architecture through reference implementations, code reviews, and standards that became the blueprint for independent frontend delivery across the org.
 - Configured Unleash feature flags, Apache Kafka event pipelines, and REST API integrations with JWT/OAuth2 authentication.
 - Led security compliance efforts covering GDPR, Snyk vulnerability scanning, and on-call incident response via Datadog.
 - Contributed to the company's Federated GraphQL layer, standardizing data-access patterns and improving query performance.
@@ -108,7 +112,7 @@ Full-stack software engineer with 15+ years of professional experience across st
 **Backend:** Node.js, GraphQL, Java
 **Infrastructure:** AWS, Vercel, Module Federation
 **Blockchain:** Bitcoin, Lightning Network, Handshake, Web3
-**Leadership:** Agile / Scrum, TDD, Code Reviews, Mentoring
+**Leadership:** Technical Strategy, Architecture, RFC Writing, Mentoring, Agile / Scrum, TDD, Code Reviews
 
 ---
 

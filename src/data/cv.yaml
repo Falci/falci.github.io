@@ -1,6 +1,6 @@
 profile:
   name: Fernando Falci
-  title: Software Engineer
+  title: Staff Software Engineer
   intro: >
     Full-stack software engineer with 15+ years of experience driving technical strategy
     and delivering complex systems across startups and large-scale enterprises. Track record
@@ -45,6 +45,7 @@ categories:
         backend,
         ddd,
         express,
+	GoLang,
         graphql,
         integration,
         java,
@@ -99,6 +100,7 @@ categories:
         Incident management,
         infrastructure,
         Jenkins,
+	Kafka,
         Kubernetes,
         loki,
         Monorepo,
@@ -222,6 +224,33 @@ entries:
             handshake,
             product,
           ]
+      - text: 'Acted as the technical reference for the engineering org, owning architecture reviews and system-design decisions, setting coding and quality standards, and unblocking the team on the hardest protocol-level and scalability problems.'
+        tags:
+          [
+            leadership,
+            architecture,
+            mentoring,
+            RFC writing,
+            Technical roadmap ownership,
+          ]
+      - text: 'Grew, guided, and mentored the engineering team across hiring, onboarding, and recurring 1:1s, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.'
+        tags:
+          [
+            leadership,
+            cto,
+            mentoring,
+            RFC writing,
+            product,
+          ]
+      - text: 'Translated ambiguous business goals into actionable technical plans, aligning smart contract, backend, and frontend workstreams behind a shared architecture and delivery cadence.'
+        tags:
+          [
+            leadership,
+            architecture,
+            product,
+            Technical roadmap ownership,
+            blockchain,
+          ]
       - text: 'Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.'
         tags:
           [
@@ -259,8 +288,8 @@ entries:
             JWT,
             Unit testing,
           ]
-      - text: 'Designed the platform data layer using PostgreSQL, Redis, and DynamoDB with careful schema design for performance at scale.'
-        tags: [postgres, redis, dynamodb, Database schema design, SQL]
+      - text: 'Designed the platform data layer using PostgreSQL, Redis, GoLang, Kafka, and DynamoDB with careful schema design for performance at scale.'
+        tags: [postgres, redis, dynamodb, Database schema design, SQL, GoLang, Kafka]
       - text: 'Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management.'
         tags:
           [
@@ -316,7 +345,7 @@ entries:
     start: 2020
     end: 2023
     bullets:
-      - text: "At Adevinta, one of Europe's largest digital marketplace groups: architected a Module Federation-based refactor of the internal backoffice, enabling 4+ teams to deploy independently and cutting deployment conflicts by 45%."
+      - text: "Technical reference for DataHub, a multi-team internal frontend platform at Adevinta: architected its migration to Webpack Module Federation (micro-frontends), defining the shared architecture and integration contracts that let 4+ teams build and deploy independently and cut deployment conflicts by 45%."
         tags:
           [
             micro-frontends,
@@ -327,6 +356,16 @@ entries:
             webpack,
             Monorepo,
             nx,
+          ]
+      - text: 'Guided multiple product teams in adopting the micro-frontend architecture through reference implementations, code reviews, and standards that became the blueprint for independent frontend delivery across the org.'
+        tags:
+          [
+            micro-frontends,
+            module-federation,
+            architecture,
+            leadership,
+            mentoring,
+            webpack,
           ]
       - text: 'Configured Unleash feature flags, Apache Kafka event pipelines, and REST API integrations with JWT/OAuth2 authentication.'
         tags:
