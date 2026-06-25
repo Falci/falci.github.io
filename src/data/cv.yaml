@@ -2,12 +2,13 @@ profile:
   name: Fernando Falci
   title: Staff Software Engineer
   intro: >
-    Full-stack software engineer with 15+ years of experience driving technical strategy
-    and delivering complex systems across startups and large-scale enterprises. Track record
-    of leading org-wide architecture initiatives, establishing engineering standards adopted
-    across multiple teams, and turning ambiguous business problems into scalable technical
-    solutions. Equally comfortable writing code, mentoring engineers, and aligning technical
-    direction with business goals.
+    Full-stack software engineer with 15+ years of experience and deep backend and
+    distributed-systems expertise, driving technical strategy and delivering complex
+    systems across startups and large-scale enterprises. Track record of designing scalable
+    APIs, data layers, and event-driven services, operating high-compliance fintech and
+    crypto platforms, and leading org-wide architecture initiatives adopted across multiple
+    teams. Equally comfortable building backend services, mentoring engineers, and aligning
+    technical direction with business goals.
 
 categories:
   - label: Frontend & Web
@@ -44,6 +45,7 @@ categories:
         API versioning,
         backend,
         ddd,
+        event-driven,
         express,
 	GoLang,
         graphql,
@@ -102,6 +104,7 @@ categories:
         Jenkins,
 	Kafka,
         Kubernetes,
+        Lambda (serverless),
         loki,
         Monorepo,
         Multi-tenancy,
@@ -170,6 +173,9 @@ categories:
     tags: [AI/Vibe, AI agents, Fine-tuning models]
 
 skills:
+  - label: Backend
+    items: [Node.js, REST APIs, GraphQL, Java]
+    tags: [node, graphql, java, api, backend, REST API design, event-driven]
   - label: Frontend
     items: [React, TypeScript, Next.js, HTML/CSS]
     tags:
@@ -184,14 +190,12 @@ skills:
         a-b-testing,
         performance,
       ]
-  - label: Backend
-    items: [Node.js, GraphQL, Java]
-    tags: [node, graphql, java, api, backend]
   - label: Infrastructure
-    items: [AWS, Vercel, Module Federation]
+    items: [AWS, AWS Lambda, Vercel, Kubernetes]
     tags:
       [
         aws,
+        Lambda (serverless),
         infrastructure,
         observability,
         cost-optimization,
@@ -210,7 +214,7 @@ entries:
     name: Namebase.io
     url: https://www.namebase.io
     role: 'Sr. Software Engineer / CTO'
-    description: 'Web3 Handshake domain marketplace and registry platform.'
+    description: 'Web3 Handshake domain marketplace, crypto exchange, and registry platform.'
     start: 2022
     end: null
     bullets:
@@ -251,18 +255,6 @@ entries:
             Technical roadmap ownership,
             blockchain,
           ]
-      - text: 'Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.'
-        tags:
-          [
-            typescript,
-            react,
-            next.js,
-            tailwind,
-            storybook,
-            TanStack Query,
-            vercel,
-            tdd,
-          ]
       - text: 'Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.'
         tags:
           [
@@ -275,10 +267,11 @@ entries:
             Optimism,
             Web3.js,
           ]
-      - text: 'Led development of the main Namebase application, a Handshake marketplace and auction platform.'
+      - text: 'Led backend development of the main Namebase application, a Handshake marketplace, crypto exchange, and auction platform, designing the REST APIs, versioning strategy, rate limiting, and real-time (SSE) layers.'
         tags:
           [
             node,
+            backend,
             TanStack Query,
             REST API design,
             API versioning,
@@ -288,9 +281,32 @@ entries:
             JWT,
             Unit testing,
           ]
+      - text: 'Built and operated the payments and settlement backend for a crypto exchange handling real-money and on-chain transactions, working within the security, auditability, and compliance constraints of a regulated financial environment.'
+        tags:
+          [
+            backend,
+            Payments,
+            security,
+            authentication,
+            api,
+            postgres,
+            Rate limiting and throttling,
+          ]
       - text: 'Designed the platform data layer using PostgreSQL, Redis, GoLang, Kafka, and DynamoDB with careful schema design for performance at scale.'
         tags: [postgres, redis, dynamodb, Database schema design, SQL, GoLang, Kafka]
-      - text: 'Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management.'
+      - text: 'Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.'
+        tags:
+          [
+            typescript,
+            react,
+            next.js,
+            tailwind,
+            storybook,
+            TanStack Query,
+            vercel,
+            tdd,
+          ]
+      - text: 'Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management. Used AWS Lambda for scheduled cron jobs and event-driven background processing.'
         tags:
           [
             aws,
@@ -299,6 +315,8 @@ entries:
             RDS,
             IAM,
             SQS / SNS,
+            Lambda (serverless),
+            event-driven,
             azure,
             Kubernetes,
             Helm,

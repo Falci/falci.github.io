@@ -6,24 +6,25 @@ linkedin.com/in/fernandofalci | github.com/Falci
 
 ---
 
-Staff-level full-stack engineer with 15+ years of experience driving technical strategy and delivering complex systems across startups and large-scale enterprises. Track record of leading org-wide architecture initiatives, establishing engineering standards adopted across multiple teams, and turning ambiguous business problems into scalable technical solutions. Operates as a force multiplier: setting technical direction, authoring RFCs, and mentoring engineers while staying deeply hands-on in code, infrastructure, and system design.
+Staff-level full-stack engineer with 15+ years of experience and deep backend and distributed-systems expertise, driving technical strategy and delivering complex systems across startups and large-scale enterprises. Track record of designing scalable APIs, data layers, and event-driven services, operating high-compliance fintech and crypto platforms, and leading org-wide architecture initiatives adopted across multiple teams. Operates as a force multiplier: setting technical direction, authoring RFCs, and mentoring engineers while staying deeply hands-on in backend code, infrastructure, and system design.
 
 ---
 
 ## Experience
 
 ### Namebase.io | Sr. Software Engineer / CTO
-2022 - Present | Web3 Handshake domain marketplace and registry platform.
+2022 - Present | Web3 Handshake domain marketplace, crypto exchange, and registry platform.
 
 - Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.
 - Acted as the technical reference for the engineering org, owning architecture reviews and system-design decisions, setting coding and quality standards, and unblocking the team on the hardest protocol-level and scalability problems.
 - Grew, guided, and mentored the engineering team across hiring, onboarding, and recurring 1:1s, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.
 - Translated ambiguous business goals into actionable technical plans, aligning smart contract, backend, and frontend workstreams behind a shared architecture and delivery cadence.
-- Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.
 - Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.
-- Led development of the main Namebase application, a Handshake marketplace and auction platform.
+- Led backend development of the main Namebase application, a Handshake marketplace, crypto exchange, and auction platform, designing the REST APIs, versioning strategy, rate limiting, and real-time (SSE) layers.
+- Built and operated the payments and settlement backend for a crypto exchange handling real-money and on-chain transactions, working within the security, auditability, and compliance constraints of a regulated financial environment.
 - Designed the platform data layer using PostgreSQL, Redis, GoLang, Kafka, and DynamoDB with careful schema design for performance at scale.
-- Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management.
+- Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.
+- Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management. Used AWS Lambda for scheduled cron jobs and event-driven background processing.
 - Built full observability stack from scratch using Grafana, OpenTelemetry, Prometheus, Loki, and Sentry.
 - Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.
 - Coordinated engineers contributing to the Handshake open-source protocol repository, bridging platform requirements with core protocol development.
@@ -108,9 +109,9 @@ Staff-level full-stack engineer with 15+ years of experience driving technical s
 
 ## Skills
 
+**Backend:** Node.js, REST APIs, GraphQL, Java
 **Frontend:** React, TypeScript, Next.js, HTML/CSS
-**Backend:** Node.js, GraphQL, Java
-**Infrastructure:** AWS, Vercel, Module Federation
+**Infrastructure:** AWS, AWS Lambda, Vercel, Kubernetes
 **Blockchain:** Bitcoin, Lightning Network, Handshake, Web3
 **Leadership:** Technical Strategy, Architecture, RFC Writing, Mentoring, Agile / Scrum, TDD, Code Reviews
 

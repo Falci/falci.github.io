@@ -1,118 +1,80 @@
 # Fernando Falci
 
-Software Engineer | cv@falci.me | https://falci.me
-
-Full-stack software engineer with 15+ years of professional experience across startups and enterprise environments, specializing in React frontends, Node.js backends, and technical leadership. Hands-on by nature and equally comfortable setting technical direction, running hiring processes, and presenting to stakeholders.
+**Staff Software Engineer**
+Western Europe | +1 (302) 687 3667 | fernando@falci.me | falci.me
+linkedin.com/in/fernandofalci | github.com/Falci
 
 ---
 
-## Technical Skills
-
-**Frontend:** React, TypeScript, Next.js, HTML/CSS, Tailwind CSS, Storybook, TanStack Query
-
-**Backend:** Node.js, GraphQL, Java, Spring Boot, NestJS, Express, REST APIs, gRPC
-
-**Databases:** PostgreSQL, MySQL, Redis, DynamoDB, SQLite, Prisma
-
-**Infrastructure:** AWS, Vercel, Kubernetes, Helm, Docker, GitHub Actions, OpenTelemetry, Prometheus, Grafana
-
-**Blockchain:** Bitcoin, Lightning Network, Handshake, Ethereum/EVM, Solidity, Web3, DeFi, NFT
-
-**Leadership:** Agile / Scrum, TDD, Code Reviews, Mentoring, Technical Roadmap, Architecture
+Staff-level full-stack engineer with 15+ years of experience and deep backend and distributed-systems expertise, driving technical strategy and delivering complex systems across startups and large-scale enterprises. Track record of designing scalable APIs, data layers, and event-driven services, operating high-compliance fintech and crypto platforms, and leading org-wide architecture initiatives adopted across multiple teams. Operates as a force multiplier: setting technical direction, authoring RFCs, and mentoring engineers while staying deeply hands-on in backend code, infrastructure, and system design.
 
 ---
 
 ## Experience
 
-### Sr. Software Engineer / CTO at Namebase.io
-
-January 2022 - January 2026 | https://www.namebase.io
-
-**Project: hns.id and Namebase Platform**
+### Namebase.io | Sr. Software Engineer / CTO
+2022 - Present | Web3 Handshake domain marketplace, crypto exchange, and registry platform.
 
 - Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.
-- Led development of the main Namebase application, a Handshake marketplace and auction platform.
+- Acted as the technical reference for the engineering org, owning architecture reviews and system-design decisions, setting coding and quality standards, and unblocking the team on the hardest protocol-level and scalability problems.
+- Grew, guided, and mentored the engineering team across hiring, onboarding, and recurring 1:1s, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.
+- Translated ambiguous business goals into actionable technical plans, aligning smart contract, backend, and frontend workstreams behind a shared architecture and delivery cadence.
+- Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.
+- Led backend development of the main Namebase application, a Handshake marketplace, crypto exchange, and auction platform, designing the REST APIs, versioning strategy, rate limiting, and real-time (SSE) layers.
+- Built and operated the payments and settlement backend for a crypto exchange handling real-money and on-chain transactions, working within the security, auditability, and compliance constraints of a regulated financial environment.
+- Designed the platform data layer using PostgreSQL, Redis, GoLang, Kafka, and DynamoDB with careful schema design for performance at scale.
+- Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.
+- Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management. Used AWS Lambda for scheduled cron jobs and event-driven background processing.
+- Built full observability stack from scratch using Grafana, OpenTelemetry, Prometheus, Loki, and Sentry.
 - Designed and implemented a custom OIDC solution with blockchain integration for secure authentication and identity flows across Namebase products.
 - Coordinated engineers contributing to the Handshake open-source protocol repository, bridging platform requirements with core protocol development.
 - Reduced AWS infrastructure costs by 40% through targeted architectural changes and resource rightsizing; built observability from scratch with unified metrics, dashboards, and alerting, cutting incident response times significantly.
 - Implemented EPP (Extensible Provisioning Protocol) integrations, expanding platform compatibility with global domain registries and opening new partnership opportunities.
 
-Skills: TypeScript, React, Next.js, Node.js, PostgreSQL, Redis, DynamoDB, AWS, Kubernetes, Helm, Blockchain, Handshake, Ethereum/EVM, Solidity, OAuth2, OIDC, JWT, OpenTelemetry, Prometheus, Grafana, Sentry, TDD, CTO, Leadership
+### Adevinta | Sr. Software Engineer
+2020 - 2023 | Europe's largest digital classifieds group, operating Milanuncios, fotocasa, Vibbo, and 30+ marketplaces.
 
-### Sr. Software Engineer at Adevinta
-
-January 2020 - January 2023
-
-**Project: Backoffice Micro-Frontend Platform**
-
-- At Adevinta, one of Europe's largest digital marketplace groups: architected a Module Federation-based refactor of the internal backoffice, enabling 4+ teams to deploy independently and cutting deployment conflicts by 45%.
+- Technical reference for DataHub, a multi-team internal frontend platform: architected its migration to Webpack Module Federation (micro-frontends), defining the shared architecture and integration contracts that let 4+ teams build and deploy independently and cut deployment conflicts by 45%.
+- Guided multiple product teams in adopting the micro-frontend architecture through reference implementations, code reviews, and standards that became the blueprint for independent frontend delivery across the org.
+- Configured Unleash feature flags, Apache Kafka event pipelines, and REST API integrations with JWT/OAuth2 authentication.
+- Led security compliance efforts covering GDPR, Snyk vulnerability scanning, and on-call incident response via Datadog.
 - Contributed to the company's Federated GraphQL layer, standardizing data-access patterns and improving query performance.
 - Championed test automation, CI/CD pipelines, and code review culture adopted across the frontend guild.
 
-Skills: TypeScript, React, Micro-frontends, Module Federation, GraphQL, Node.js, Webpack, Nx, Apache Kafka, OAuth2, GDPR, Datadog, TDD, Cypress, Leadership, Mentoring
-
-### Sr. Software Engineer at eDreams Odigeo
-
-January 2017 - January 2020
-
-**Project: Booking Interface Migration and A/B Testing**
+### eDreams Odigeo | Sr. Software Engineer
+2017 - 2020 | Europe's leading online travel agency, operating eDreams, Opodo, and GoVoyages across 44 markets.
 
 - Led the full migration of eDreams' primary booking interface from Backbone.js to React (10,000+ daily active users, zero downtime), delivering 30% faster load times and a 40% reduction in codebase size.
 - Designed and ran a systematic A/B testing programme alongside product and design, increasing feature adoption rates by 20%.
+- Worked within a large distributed frontend team following Agile/Scrum, mentoring junior developers and driving code quality standards across the booking flow with TypeScript, CSS Modules, and webpack.
 
-Skills: React, TypeScript, Redux, A/B Testing, Performance, Migration, i18n, Accessibility, Agile, Scrum
-
-### Development Analyst at Mobile-DI
-
-January 2015 - January 2018
-
-**Project: Enterprise Angular Applications**
+### Mobile-DI | Development Analyst
+2015 - 2018 | Software consultancy delivering enterprise Angular applications for B2B clients.
 
 - Managed a distributed team delivering Angular applications for enterprise clients, owning architectural decisions, establishing coding standards, and mentoring junior developers through structured code reviews.
 - Served as primary technical contact for stakeholders, translating business requirements into engineering plans and delivery timelines.
 
-Skills: Angular, Architecture, Leadership, Mentoring, Agile, Scrum, PostgreSQL, Multi-tenancy
-
-### Software Engineer at Matera Systems
-
-January 2014 - January 2017 | https://matera.com.br/
-
-**Project: TV/Streaming Platform**
+### Matera Systems | Software Engineer
+2014 - 2017 | Brazilian fintech delivering platform solutions for financial institutions and payment processors.
 
 - Contributed to the development of a platform for a major U.S. company in the TV/streaming sector, implementing features across the stack with Java and Angular and collaborating closely with cross-functional teams to deliver end-to-end solutions.
 
-Skills: Java, Angular, Microservices, DDD, TDD, MySQL, Jenkins
-
-### Junior Software Engineer at IADTEC
-
-January 2013 - January 2014 | https://iadtec.com.br/
-
-**Project: Web Applications**
+### IADTEC | Junior Software Engineer
+2013 - 2014 | IT consulting firm serving retail and grocery sector clients.
 
 - Developed Java-based web applications for clients in the grocery and retail sectors, implementing RESTful APIs and custom UI components.
 
-Skills: Java, Angular, REST APIs
-
-### Junior Software Engineer at Elotech
-
-January 2011 - January 2012 | https://www.elotech.com.br/
-
-**Project: Healthcare Platform**
+### Elotech | Junior Software Engineer
+2011 - 2012 | Brazilian software company serving the public sector with management and e-gov systems.
 
 - Contributed to the development of a platform for the healthcare industry, working primarily with jQuery and PHP to build interactive features and backend services.
-- Visited client sites to perform on-site deployments and support go-live activities.
-
-Skills: PHP, jQuery
 
 ---
 
-## Personal Projects
+## Open Source
 
-### Open Source Contributor - Handshake Protocol (HIPs)
-
-January 2020 - Present | https://hns.dev/HIPs/
-
-**Project: Handshake Improvement Proposals**
+### Handshake | Open Source Contributor
+2020 - Present | Decentralized, permissionless naming protocol and blockchain -- an alternative root DNS.
 
 - Principal coordinator of the HIPs repository, the formal process for proposing and ratifying changes to the Handshake protocol, analogous to Bitcoin's BIPs.
 - Authored HIP2, which was adopted by multiple ecosystem projects including BobWallet.
@@ -121,36 +83,42 @@ January 2020 - Present | https://hns.dev/HIPs/
 - Built an open-source page builder for link-in-bio style pages using Web Components.
 - Built an open-source Handshake price tracker using Python with AI-assisted workflows and SQLite.
 
-Skills: Blockchain, Handshake, Bitcoin, Open Source, Python, SQLite, GitHub Actions, Web Components
+### Bob Wallet | Open Source Contributor
+2020 - Present | Leading open-source Handshake wallet and name management tool.
 
-### Open Source Contributor - BobWallet
+- Contributed to BobWallet, implementing features such as emoji support for domain names and improving the user interface for name auctions.
 
-January 2020 - Present | https://bobwallet.io/
+---
 
-**Project: BobWallet Contributions**
+## Side Projects
 
-- Contributed to BobWallet, a popular Handshake wallet and name management tool, implementing features such as emoji support for domain names and improving the user interface for name auctions.
+### sinpapeles.xyz
+2020 - 2024 | Hosting service for Handshake domains with IPFS support.
 
-Skills: Blockchain, Handshake, React, JavaScript, Open Source, i18n
+- Built sinpapeles.xyz, a hosting service for Handshake domains with IPFS support using Vite, Express, Node.js, and PostgreSQL.
+- Built a default parking page for unconfigured Handshake domains, served via Express with Handlebars templates and JWT-based auth.
 
-### Independent Developer
+### Anonymous Bot
+2019 - Present | SaaS Slack bot for anonymous team messaging, with AI features and Stripe billing.
 
-January 2010 - Present
+- Built with NestJS, PostgreSQL/Prisma data layer, and Redis caching.
+- Integrated Stripe payments, Slack Webhooks, and automated deployments via GitHub Actions with Secrets Manager.
+- Added fine-tuned AI models and AI agent features; instrumented with Grafana, OpenTelemetry, Datadog, and Sentry; covered with TDD unit tests.
 
-**Project: Anonymous Bot**
+---
 
-- Built Anonymous Bot, a SaaS Slack bot developed with NestJS.
+## Skills
 
-Skills: NestJS, Node.js, PostgreSQL, Redis, Stripe, Prisma, GitHub Actions, OpenTelemetry, Grafana, Sentry, TDD
+**Backend:** Node.js, REST APIs, GraphQL, Java
+**Frontend:** React, TypeScript, Next.js, HTML/CSS
+**Infrastructure:** AWS, AWS Lambda, Vercel, Kubernetes
+**Blockchain:** Bitcoin, Lightning Network, Handshake, Web3
+**Leadership:** Technical Strategy, Architecture, RFC Writing, Mentoring, Agile / Scrum, TDD, Code Reviews
 
-**Project: Lightning Network Liquidity Bot**
+---
 
-- Created a bot to connect Amboss' MAGMA and automate the sale of liquidity channels on the Lightning Network.
+## References
 
-Skills: Rust, Blockchain, Lightning Network, Open Source
+**Daniel Fernandez** | Qdrant, Staff Software Engineer | contact@danifdz.dev
 
-**Project: Dynamic CV**
-
-- Built this dynamic CV with AI-assisted workflows.
-
-Skills: React, TypeScript, Vite, GitHub Actions, AI
+**Aaron Oxborrow** | Aftermarket.com, CTO | aaron@oxborrow.com
