@@ -213,7 +213,7 @@ entries:
   - type: company
     name: Namebase.io
     url: https://www.namebase.io
-    role: 'Sr. Software Engineer / CTO'
+    role: 'Staff Software Engineer'
     description: 'Web3 Handshake domain marketplace, crypto exchange, and registry platform.'
     start: 2022
     end: null
@@ -237,7 +237,7 @@ entries:
             RFC writing,
             Technical roadmap ownership,
           ]
-      - text: 'Grew, guided, and mentored the engineering team across hiring, onboarding, and recurring 1:1s, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.'
+      - text: 'Mentored engineers through onboarding, pairing, and technical reviews, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.'
         tags:
           [
             leadership,

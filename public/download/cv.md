@@ -12,12 +12,12 @@ Staff-level full-stack engineer with 15+ years of experience and deep backend an
 
 ## Experience
 
-### Namebase.io | Sr. Software Engineer / CTO
+### Namebase.io | Staff Software Engineer
 2022 - Present | Web3 Handshake domain marketplace, crypto exchange, and registry platform.
 
 - Owned the full technology roadmap for hns.id, the Web3 Handshake domain marketplace and resolution platform, leading a cross-functional remote team of smart contract engineers, backend developers, and UX designers.
 - Acted as the technical reference for the engineering org, owning architecture reviews and system-design decisions, setting coding and quality standards, and unblocking the team on the hardest protocol-level and scalability problems.
-- Grew, guided, and mentored the engineering team across hiring, onboarding, and recurring 1:1s, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.
+- Mentored engineers through onboarding, pairing, and technical reviews, introducing an RFC-driven decision process that raised delivery quality and engineer autonomy.
 - Translated ambiguous business goals into actionable technical plans, aligning smart contract, backend, and frontend workstreams behind a shared architecture and delivery cadence.
 - Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.
 - Led backend development of the main Namebase application, a Handshake marketplace, crypto exchange, and auction platform, designing the REST APIs, versioning strategy, rate limiting, and real-time (SSE) layers.
