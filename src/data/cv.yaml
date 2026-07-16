@@ -2,13 +2,13 @@ profile:
   name: Fernando Falci
   title: Staff Software Engineer
   intro: >
-    Full-stack software engineer with 15+ years of experience and deep backend and
-    distributed-systems expertise, driving technical strategy and delivering complex
-    systems across startups and large-scale enterprises. Track record of designing scalable
-    APIs, data layers, and event-driven services, operating high-compliance fintech and
-    crypto platforms, and leading org-wide architecture initiatives adopted across multiple
-    teams. Equally comfortable building backend services, mentoring engineers, and aligning
-    technical direction with business goals.
+    Full-stack software engineer with 15+ years of experience across TypeScript/React/Node.js
+    and backend, distributed-systems architecture, driving technical strategy and delivering
+    complex systems across startups and large-scale enterprises. Track record of designing
+    scalable APIs, data layers, and event-driven services, operating high-compliance fintech
+    and crypto platforms, and leading org-wide architecture initiatives adopted across multiple
+    teams. Equally comfortable building frontend and backend services, mentoring engineers,
+    and aligning technical direction with business goals.
 
 categories:
   - label: Frontend & Web
@@ -47,7 +47,7 @@ categories:
         ddd,
         event-driven,
         express,
-	GoLang,
+        GoLang,
         graphql,
         integration,
         java,
@@ -102,7 +102,7 @@ categories:
         Incident management,
         infrastructure,
         Jenkins,
-	Kafka,
+        Kafka,
         Kubernetes,
         Lambda (serverless),
         loki,
@@ -174,14 +174,14 @@ categories:
 
 skills:
   - label: Backend
-    items: [Node.js, REST APIs, GraphQL, Java]
-    tags: [node, graphql, java, api, backend, REST API design, event-driven]
+    items: [TypeScript, Node.js, REST APIs, GraphQL, Java]
+    tags: [typescript, node, graphql, java, api, backend, REST API design, event-driven]
   - label: Frontend
-    items: [React, TypeScript, Next.js, HTML/CSS]
+    items: [TypeScript, React, Next.js, HTML/CSS]
     tags:
       [
-        react,
         typescript,
+        react,
         next.js,
         css,
         micro-frontends,
@@ -228,6 +228,18 @@ entries:
             handshake,
             product,
           ]
+      - text: 'Architect and maintain the hns.id frontend in TypeScript, React, and Next.js, integrating TanStack Query and Storybook for a component-driven UI deployed on Vercel — actively developed and extended alongside the backend and protocol roadmap.'
+        tags:
+          [
+            typescript,
+            react,
+            next.js,
+            tailwind,
+            storybook,
+            TanStack Query,
+            vercel,
+            tdd,
+          ]
       - text: 'Acted as the technical reference for the engineering org, owning architecture reviews and system-design decisions, setting coding and quality standards, and unblocking the team on the hardest protocol-level and scalability problems.'
         tags:
           [
@@ -255,7 +267,7 @@ entries:
             Technical roadmap ownership,
             blockchain,
           ]
-      - text: 'Shipped Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations for hns.id, using Solidity and Web3.js to support DeFi and NFT (ERC-721) features.'
+      - text: "Directed the roadmap for hns.id's Ethereum/EVM smart contracts and Layer 2 (Optimism) integrations, guiding the smart contract engineering team's use of Solidity and Web3.js to deliver DeFi and NFT (ERC-721) features."
         tags:
           [
             Ethereum / EVM,
@@ -267,9 +279,10 @@ entries:
             Optimism,
             Web3.js,
           ]
-      - text: 'Led backend development of the main Namebase application, a Handshake marketplace, crypto exchange, and auction platform, designing the REST APIs, versioning strategy, rate limiting, and real-time (SSE) layers.'
+      - text: 'Led backend development of the main Namebase application, a Handshake marketplace, crypto exchange, and auction platform, using Node.js and TypeScript to design the REST APIs, versioning strategy, rate limiting, and real-time (SSE) layers.'
         tags:
           [
+            typescript,
             node,
             backend,
             TanStack Query,
@@ -292,20 +305,8 @@ entries:
             postgres,
             Rate limiting and throttling,
           ]
-      - text: 'Designed the platform data layer using PostgreSQL, Redis, GoLang, Kafka, and DynamoDB with careful schema design for performance at scale.'
+      - text: "Designed the platform's data layer architecture across PostgreSQL, Redis, Kafka, and DynamoDB, with careful schema design for performance at scale, overseeing the Go services that implemented it."
         tags: [postgres, redis, dynamodb, Database schema design, SQL, GoLang, Kafka]
-      - text: 'Built hns.id frontend with Next.js, React, and Tailwind CSS, integrating TanStack Query and Storybook for a robust component-driven UI deployed on Vercel.'
-        tags:
-          [
-            typescript,
-            react,
-            next.js,
-            tailwind,
-            storybook,
-            TanStack Query,
-            vercel,
-            tdd,
-          ]
       - text: 'Managed AWS infrastructure (EC2, RDS, S3, IAM, SQS/SNS) and Kubernetes deployments on Azure via Helm, with Unleash for feature flag management. Used AWS Lambda for scheduled cron jobs and event-driven background processing.'
         tags:
           [
